@@ -8,12 +8,26 @@ function Search(){
 
     //re-initialisation
     ChangeFile()
+    //filename == "test.json"
 
     
     historique = "name,relation,parent";
     elem = "";
 
     createVisualization();
+}
+
+
+
+function ChargerCSV(){
+
+    var f = document.getElementById("myFile").value;
+    //console.log(f);
+    //var file = f;
+
+    
+    createVisualizationCSV(f);
+    //TreeCSV(f);
 }
 
 

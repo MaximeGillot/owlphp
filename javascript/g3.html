@@ -11,6 +11,8 @@
     <div id="main">
         <input type="text" id="recherche" />
           <button onclick="Search()" >Recherche</button>
+          <input type="file" id="myFile">
+          <button onclick="ChargerCSV()">Charger Fichier CSV</button>
       <table id="table">
 
         <tr id="sun">
@@ -21,6 +23,7 @@
           </th>
        
            <td id="info">
+             <a id="download" href="javascript:download_csv();">download</a>
              <div class="content"></div>
           </td>
         </tr>

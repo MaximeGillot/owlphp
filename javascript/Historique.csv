@@ -1,0 +1,6 @@
+name,relation,parent
+Europe,null,null
+France,aPourPays,Europe
+Bretagne,aPourRegion,France
+Maurbian,aPourDepartement,Bretagne
+Ile et Vilaine,aPourDepartement,Bretagne

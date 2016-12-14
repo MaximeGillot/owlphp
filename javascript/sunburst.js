@@ -128,6 +128,98 @@ function createVisualization() {
  };
  
  
+ // Main function to draw and set up the visualization, once we have the data.
+function createVisualizationCSV(file) {
+  d3.select("#container").selectAll("path").remove();
+  d3.select("#container").selectAll(".centre").remove();
+  d3.select("#container").selectAll(".arcText").remove(); 
+  d3.selectAll("#trail").remove(); 
+  
+  
+    //console.log(filename);
+    d3.csv(file, function(error, csv) {
+        //d3.csv(JSON.parse(CSV_JSON(csv)), function(error, json) {
+        //var json = JSON.parse(CSV_JSON(csv));
+        //console.log(JSON.parse(CSV_JSON(csv)));
+        var json = JSON.parse(CSV_JSON(csv));
+        //console.log(JSON.parse(CSV_JSON(csv)));
+        json.forEach(function (d) {
+            d.name = d.name;
+            d.relation = d.relation;
+            d.parent = d.parent;
+            });
+        console.log(json);
+          //elem = json.name; //initJSON(elem);
+            
+          // Basic setup of page elements.
+          initializeBreadcrumbTrail();
+          
+          // Bounding circle underneath the sunburst, to make it easier to detect
+          // when the mouse leaves the parent g.
+          vis.append("svg:circle")
+              .attr("r", radius)
+              .style("opacity", 0).append("path");
+
+          // For efficiency, filter nodes to keep only those large enough to see.
+          nodes = partition.nodes(json)
+              .filter(function(d) {
+              return (d.dx > 0.005); // 0.005 radians = 0.29 degrees
+              });        
+
+       
+          var path = vis.data(json).selectAll("path")
+              .data(nodes)
+              .enter()
+              .append("svg:path")
+                .attr("id", function(d,i) { return "Arc_"+i; }) //Give each slice a unique ID
+                .attr("class", "Arc")
+                //.text(function(d){return d.name;})
+                .attr("display", function(d) { return d.depth ? null : "none"; })
+                .attr("d", arc)
+                .attr("fill-rule", "evenodd")
+                .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
+                .style("opacity", 1)
+                .on("mouseover", mouseover)
+                .on("mousemove", mouseMoveArc)
+                .on("click", click).each(stash);
+  
+           var text = vis.selectAll(".arcText")
+              .data(nodes)   
+              .enter()
+              .append("text")
+              .attr("class", "arcText")
+              .style("text-anchor","middle")
+              //.attr("x", 5) //Move the text from the start angle of the arc
+              .attr("dy", 18) //Move the text down
+              .append("textPath")
+              .attr("startOffset","25%")
+              .attr("xlink:href",function(d,i){return "#Arc_"+i;})    
+              .text(function(d){return d.name;});
+                
+           path.transition()
+              .duration(750)
+              .attrTween("d", arcTween);
+              
+
+
+          // Add the mouseleave handler to the bounding circle.
+          d3.select("#container").on("mouseleave", mouseleave);
+
+          // Get total size of the tree = value of root node from partition.
+          totalSize = path.node().__data__.value;
+          
+
+    });
+    
+    
+    //console.log(elem);
+    if(elem !== ""){Tree();}
+    //});
+ };
+ 
+
+ 
+ 
  //actions when click 
 function click(d)
 {
@@ -151,6 +243,8 @@ function click(d)
   createVisualization();
     
 }
+
+
 
 function arcTween(a){
                     var i = d3.interpolate({x: a.x0, dx: a.dx0}, a);
