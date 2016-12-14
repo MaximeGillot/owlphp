@@ -35,9 +35,11 @@ class tree
 			$treeFils = new tree;
 			$treeFils->type = $subclass_of_current_class[$i];
 			$all_wiki = get_all_wikiLink_of_type($subject,$subclass_of_current_class[$i]);
+		//	$new_array = array();
 			for ($j=0; $j < count($all_wiki); $j++)
 			{ 
 				$treeFils->addObject($all_wiki[$j]);
+
 			}
 			array_push($this->fils, $treeFils);
 		}
@@ -54,18 +56,37 @@ class tree
 	public function from_tree_2_json()
 	{
 		$file = fopen('test.json', 'a+');
-		
-		for ($i=0; $i < count($this->object) ; $i++) 
-		{ 
-			
+		fputs($file,"{");
+
+		fputs($file, "\"name\" : \"".$this->type."\",\n");
+		fputs($file, "\"description\" : \"\",\n");
+		fputs($file, "\"size\" : 3938,\n");
+		fputs($file, "\"children\" : [\n");
+
+		if (count($this->fils) > 0 || count($this->object) > 0 ) 
+		{
+			if (count($this->object) > 0 ) 
+			{
+				for ($i=0; $i < count($this->object) ; $i++) 
+				{ 
+					fputs($file, "{\n");
+					fputs($file, "\"name\" : \"".$this->object[$i]."\",\n");
+					fputs($file, "\"description\" : \"\",\n");
+					fputs($file, "\"size\" : 3938,\n");
+					fputs($file, "\"children\" : []\n");
+					fputs($file, "},\n");
+				}
+			}
 		}
 
 		for ($i=0; $i < count($this->fils) ; $i++) 
 		{ 
 			$this->fils[$i]->from_tree_2_json();
 		}
+		fputs($file,"]");
+		fputs($file,"}");
 	}
 }
 
-fputs($file,"t");
+
 ?>
