@@ -1,5 +1,5 @@
-# Circled Data
-Linked Data Viewer Project in Python/Django &amp; JS 
+# Owl representation data
+Linked Data Viewer Project in PHP 7 &amp; JS 
 
 ## Dev Env Installation (linux)
 Presuppose: python3 is already installed.
