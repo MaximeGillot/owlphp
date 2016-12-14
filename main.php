@@ -19,8 +19,9 @@ $tree->auto_complete("France");
 
 print_r($tree);
 
-
 $tree->from_tree_2_json();
+
+
 
 
 ?>

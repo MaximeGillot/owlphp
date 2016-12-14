@@ -29,19 +29,22 @@ class tree
 	public function auto_complete($subject)
 	{
 		$subclass_of_current_class = get_all_subclass($this->type);
-		for ($i=0; $i < count($subclass_of_current_class) ; $i++) 
+		$nb_sub_class = count($subclass_of_current_class);
+		for ($i=0; $i < $nb_sub_class ; $i++) 
 		{ 
-
-			$treeFils = new tree;
-			$treeFils->type = $subclass_of_current_class[$i];
 			$all_wiki = get_all_wikiLink_of_type($subject,$subclass_of_current_class[$i]);
-		//	$new_array = array();
-			for ($j=0; $j < count($all_wiki); $j++)
-			{ 
-				$treeFils->addObject($all_wiki[$j]);
+			if (count($all_wiki) > 0 ) 
+			{
+				$treeFils = new tree;
+				$treeFils->type = $subclass_of_current_class[$i];
 
+				for ($j=0; $j < count($all_wiki); $j++)
+				{ 
+					$treeFils->addObject($all_wiki[$j]);
+
+				}
+				array_push($this->fils, $treeFils);
 			}
-			array_push($this->fils, $treeFils);
 		}
 		for ($i=0; $i < count($this->fils) ; $i++) 
 		{ 
@@ -63,28 +66,39 @@ class tree
 		fputs($file, "\"size\" : 3938,\n");
 		fputs($file, "\"children\" : [\n");
 
-		if (count($this->fils) > 0 || count($this->object) > 0 ) 
+
+		if (count($this->object) > 0 ) 
 		{
-			if (count($this->object) > 0 ) 
-			{
-				for ($i=0; $i < count($this->object) ; $i++) 
-				{ 
-					fputs($file, "{\n");
-					fputs($file, "\"name\" : \"".$this->object[$i]."\",\n");
-					fputs($file, "\"description\" : \"\",\n");
-					fputs($file, "\"size\" : 3938,\n");
-					fputs($file, "\"children\" : []\n");
-					fputs($file, "},\n");
+			$nb_object_current = count($this->object);
+			for ($i=0; $i < $nb_object_current ; $i++) 
+			{ 
+				$insert = "";
+				$insert.= "{\n";
+				$insert.= "\"name\" : \"".$this->object[$i]."\",\n";
+				$insert.= "\"description\" : \"\",\n";
+				$insert.= "\"size\" : 3938,\n";
+				$insert.= "\"children\" : []\n";
+				$insert.= "}";
+				if ($i < $nb_object_current-1 )
+				{
+					$insert.= ",\n";
 				}
+				fputs($file,$insert);
 			}
+		}
+		
+
+		if (count($this->fils) > 0 ) 
+		{
+			$insert.= ",\n";
 		}
 
 		for ($i=0; $i < count($this->fils) ; $i++) 
 		{ 
 			$this->fils[$i]->from_tree_2_json();
 		}
-		fputs($file,"]");
-		fputs($file,"}");
+		fputs($file,"]\n");
+		fputs($file,"}\n,");
 	}
 }
 
