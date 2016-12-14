@@ -22,5 +22,30 @@ print_r($tree);
 
 $tree->from_tree_2_json();
 
+/*
+ * Function make_tree
+ *
+ * This function is the main one: called from the search front-end
+ * - make a SPARQL Request on subject
+ * - create the tree
+ * - convert this tree to JSON
+ *
+ * @param (string) the request subject
+ * @return void
+ */
+function make_tree($subject){
+
+	$request = first_request($subject);
+	
+	$request = for ($i=0; $i < count($request) ; $i++){
+		$tree->addObject($request[$i]);
+	}
+
+	$tree->from_tree_2_json();
+
+}
+
+
+
 
 ?>
