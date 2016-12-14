@@ -20,6 +20,14 @@ Presuppose: python3 is already installed.
 
 `sudo apt-get install php7.0-curl`
 
+* Installing the XML library
+
+`sudo apt-get install php7.0-xml`
+
+* Don't forger to restart your server
+
+`sudo service apache2 restart`
+
 ## Git Manual
 
 Configs
