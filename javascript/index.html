@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+/* Styles go here */
+
+
+
+#main {
+  float: left;
+  width: 100%;
+}
+
+#sidebar {
+  float: right;
+  width: 100%;
+}
+
+
+
+#sequence text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  fill: #fff;
+}
+
+#chart {
+  position: relative;
+}
+
+#chart path {
+  stroke: #fff;
+}
+
+#barchart {
+  position: absolute;
+  top: 260px;
+  left: 750px;
+  width: 300px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+}
+
+
+#barchart rect {
+  fill: steelblue;
+}
+
+#Barchart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+#tooltip { background-color: white;
+			  padding: 3px 5px;
+			  border: 1px solid black;
+			  text-align: center;}
+			  
+table{
+  border-collapse: collapse;
+  border: 2px solid;
+  width: 100%;
+  }
+  
+tr{
+  border:3px solid;
+}
+
+th{
+  border:3px solid;
+} 
+
+td{
+  border:3px solid;
+}
+
+#sun{
+  width: 70%;
+}
+
+#graphe{
+  width: 30%;
+}
+
+
+
+
+
+
+.node circle {
+  fill: #999;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.node--internal circle {
+  fill: #555;
+}
+
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #555;
+  stroke-opacity: 0.4;
+  stroke-width: 1.5px;
+}
+
+
+};
+
+</style>
+  <body id="body">
+    <div id="main">
+        <input type="text" id="recherche" />
+          <a href="main.html">
+             <button>Recherche</button>
+          </a>
+      <table id="table">
+
+        <tr id="sun">
+        
+          <th rowspan="2">
+            <div id="sequence"></div>
+            <div id="chart"></div>
+          </th>
+       
+           <td id="info">
+             <p>Zone où nous pourrons placer du text </p>
+          </td>
+        </tr>
+        <tr id="graphe">
+          <td id="historique">
+             <div id="histo"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v0.3.js"></script>
+<script>
+// Dimensions of sunburst.
+var width = 1000;
+var widthc = width;
+var height = 700;
+var heightc = height;
+var radius = Math.min(width, height) / 2;
+var color = d3.scale.category20c();
+
+// Breadcrumb dimensions: width, height, spacing, width of tip/tail.
+var b = { w: 125, h: 50, s: 3, t: 50 };
+
+// make `colors` an ordinal scale
+var colors = d3.scale.category20c();
+
+// Total size of all segments; we set this later, after loading the data.
+var totalSize = 0; 
+
+var vis = d3.select("#chart").append("svg:svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("svg:g")
+    .attr("id", "container")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+var partition = d3.layout.partition()
+    .size([2 * Math.PI, radius * radius])
+    .value(function(d) { return d.size; });//a modifier suivant le fichier en entrée
+
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return d.x; })
+    .endAngle(function(d) { return d.x + d.dx; })
+    .innerRadius(function(d) { return Math.sqrt(d.y); })
+    .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
+
+
+//Tooltip description
+var tooltip = d3.select("#chart")
+    .append("div")
+    .attr("id", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("opacity", 0);
+
+var nodes;
+
+createVisualization();
+
+// Main function to draw and set up the visualization, once we have the data.
+function createVisualization() {
+    d3.json("france.json", function(error, json) {
+
+          // Basic setup of page elements.
+          initializeBreadcrumbTrail();
+          
+          // Bounding circle underneath the sunburst, to make it easier to detect
+          // when the mouse leaves the parent g.
+          vis.append("svg:circle")
+              .attr("r", radius)
+              .style("opacity", 0).append("path");
+
+          // For efficiency, filter nodes to keep only those large enough to see.
+          nodes = partition.nodes(json)
+              .filter(function(d) {
+              return (d.dx > 0.005); // 0.005 radians = 0.29 degrees
+              });        
+/*
+          var center = vis.selectAll(".centre").data(nodes)
+            .append("text").attr("class", "centre").text(function(d) { return d.name; });
+            */
+
+       
+          var path = vis.data([json]).selectAll("path")
+              .data(nodes)
+              .enter()
+              .append("svg:path")
+                .attr("id", function(d,i) { return "Arc_"+i; }) //Give each slice a unique ID
+                .attr("class", "Arc")
+                //.text(function(d){return d.name;})
+                .attr("display", function(d) { return d.depth ? null : "none"; })
+                .attr("d", arc)
+                .attr("fill-rule", "evenodd")
+                .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
+                .style("opacity", 1)
+                .on("mouseover", mouseover)
+                .on("mousemove", mouseMoveArc)
+                .on("click", click).each(stash);
+  
+           var text = vis.selectAll(".arcText")
+              .data(nodes)   
+              .enter()
+              .append("text")
+              .attr("class", "arcText")
+              .style("text-anchor","middle")
+              //.attr("x", 5) //Move the text from the start angle of the arc
+              .attr("dy", 18) //Move the text down
+              .append("textPath")
+              .attr("startOffset","25%")
+              .attr("xlink:href",function(d,i){return "#Arc_"+i;})    
+              .text(function(d){return d.name;});
+                
+           path.transition()
+              .duration(750)
+              .attrTween("d", arcTween);
+              
+
+
+          // Add the mouseleave handler to the bounding circle.
+          d3.select("#container").on("mouseleave", mouseleave);
+
+          // Get total size of the tree = value of root node from partition.
+          totalSize = path.node().__data__.value;
+    });
+    
+    Tree();
+ };
+ 
+ 
+ //actions when click 
+function click(d)
+{
+  d3.select("#container").selectAll("path").remove();
+  d3.select("#container").selectAll(".centre").remove();
+  d3.select("#container").selectAll(".arcText").remove(); 
+  d3.selectAll("#trail").remove(); 
+  
+  createVisualization();
+
+}
+
+function arcTween(a){
+                    var i = d3.interpolate({x: a.x0, dx: a.dx0}, a);
+                    return function(t) {
+                        var b = i(t);
+                        a.x0 = b.x;
+                        a.dx0 = b.dx;
+                        return arc(b);
+                    };
+                };
+
+function stash(d) {
+                    d.x0 = 0; // d.x;
+                    d.dx0 = 0; //d.dx;
+                }; 
+
+// Fade all but the current sequence, and show it in the breadcrumb trail.
+function mouseover(d) {
+
+  var sequenceArray = getAncestors(d);
+  updateBreadcrumbs(sequenceArray);
+
+  // Fade all the segments.
+  d3.selectAll("path")
+      .style("opacity", 0.3);
+
+  // Then highlight only those that are an ancestor of the current segment.
+  vis.selectAll("path")
+      .filter(function(node) {
+                return (sequenceArray.indexOf(node) >= 0);
+              })
+      .style("opacity", 1);
+      
+  tooltip.html(format_description(d));
+  tooltip.transition()
+            .duration(50)
+            .style("opacity", 0.9);
+            
+  updateBreadcrumbs(sequenceArray);
+}
+
+function format_description(d) {
+      return  '<b>' + d.name + '</b>';
+}
+
+d3.select(self.frameElement).style("height", height + "px");
+
+// Restore everything to full opacity when moving off the visualization.
+function mouseleave(d) {
+
+  // Hide the breadcrumb trail
+  d3.select("#trail")
+      .style("visibility", "hidden");
+
+  // Deactivate all segments during transition.
+  d3.selectAll("path").on("mouseover", null);
+
+  // Transition each segment to full opacity and then reactivate it.
+  d3.selectAll("path")
+      .transition()
+      .duration(1000)
+      .style("opacity", 1)
+ ;/*     .each("end", function() {
+              d3.select(this).on("mouseover", mouseover).on("mousemove", mouseMoveArc);
+            });*/
+    tooltip.style("opacity", 0);
+}
+
+function mouseMoveArc (d) {
+          return tooltip
+            .style("top", (d3.event.pageY-10)+"px")
+            .style("left", (d3.event.pageX+10)+"px");
+}
+
+// Given a node in a partition layout, return an array of all of its ancestor
+// nodes, highest first, but excluding the root.
+function getAncestors(node) {
+  var path = [];
+  var current = node;
+  while (current.parent) {
+    path.unshift(current);
+    current = current.parent;
+  }
+  return path;
+}
+
+function initializeBreadcrumbTrail() {
+  // Add the svg area.
+  var trail = d3.select("#sequence").append("svg:svg")
+      .attr("width", widthc)
+      .attr("height", 50)
+      .attr("id", "trail");
+  // Add the label at the end, for the percentage.
+  /*trail.append("svg:text")
+    .attr("id", "endlabel");
+    //.style("fill", "#000");
+    */
+}
+
+// Generate a string that describes the points of a breadcrumb polygon.
+function breadcrumbPoints(d, i) {
+  var points = [];
+  points.push("0,0");
+  points.push(b.w + ",0");
+  points.push(b.w + b.t + "," + (b.h ));
+  points.push(b.w + "," + b.h);
+  points.push("0," + b.h);
+  if (i > 0) { // Leftmost breadcrumb; don't include 6th vertex.
+    points.push(b.t + "," + (b.h ));
+  }
+  return points.join(" ");
+}
+
+// Update the breadcrumb trail to show the current sequence and percentage.
+function updateBreadcrumbs(nodeArray) {
+
+  // Data join; key function combines name and depth (= position in sequence).
+  var g = d3.select("#trail")
+      .selectAll("g")
+      .data(nodeArray, function(d) { return d.name + d.depth; });
+      
+
+
+  // Add breadcrumb and label for entering nodes.
+  var entering = g.enter().append("svg:g");
+                  //.attr("width", 50);
+
+      
+  entering.append("svg:polygon")
+      .attr("points", breadcrumbPoints)
+      .style("fill", function(d) { return color((d.children ? d : d.parent).name); });
+
+  entering.append("svg:text")
+      .attr("x", (b.w + b.t) / 2)
+      .attr("y", b.h / 2)
+      .attr("dy", "0.35em")
+      .attr("text-anchor", "middle")
+      .text(function(d) { return d.name; });
+
+  // Set position for entering and updating nodes.
+  g.attr("transform", function(d, i) {
+    return "translate(" + i * (b.w + b.s) + ", 0)";
+  });
+
+  // Remove exiting nodes.
+  g.exit().remove();
+
+  // Make the breadcrumb trail visible, if it's hidden.
+  d3.select("#trail")
+      .style("visibility", "");
+
+}
+
+
+ 
+        
+/*
+function Tree() {
+
+    d3.select("#histo").selectAll("svg").remove();
+    
+    // ************** Generate the tree diagram	 *****************
+    var margin = {top: 20, right: 120, bottom: 20, left: 120},
+	    width = 960 - margin.right - margin.left,
+	    height = 500 - margin.top - margin.bottom;
+	
+    var i = 0;
+
+    var tree = d3.layout.tree()
+	    .size([height, width]);
+
+    var diagonal = d3.svg.diagonal()
+	    .projection(function(d) { return [d.y, d.x]; });
+
+    var svg = d3.select("#histo").append("svg")
+	    .attr("width", width + margin.right + margin.left)
+	    .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // load the external data
+    d3.json("france.json", function(error, treeData) {
+      root = treeData[0];
+      
+
+      // Compute the new tree layout.
+      var nodes = tree.nodes(treeData).reverse(),
+	      links = tree.links(nodes);
+//console.log(links);
+      // Normalize for fixed-depth.
+      nodes.forEach(function(d) { d.y = d.depth * 180; });
+
+      // Declare the nodes…
+      var node = svg.selectAll("g.node")
+	      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+      // Enter the nodes.
+      var nodeEnter = node.enter().append("g")
+	      .attr("class", "node")
+	      .attr("transform", function(d) { 
+		      return "translate(" + d.y + "," + d.x + ")"; });
+
+      nodeEnter.append("circle")
+	      .attr("r", 10);
+	      //.style("fill", "#fff");
+
+      nodeEnter.append("text")
+	      .attr("x", function(d) { 
+		      return d.children || d._children ? -13 : 13; })
+	      .attr("dy", ".35em")
+	      .attr("text-anchor", function(d) { 
+		      return d.children || d._children ? "end" : "start"; })
+	      .text(function(d) { return d.name; })
+	      .style("fill-opacity", 1);
+
+      // Declare the links…
+      var link = svg.selectAll("path.link")
+	      .data(links, function(d) { return d.target.id; });
+
+      // Enter the links.
+      link.enter().insert("path", "g")
+	      .attr("class", "link")
+	      .attr("d", diagonal);
+
+    });
+
+
+}
+*/
+
+function Tree() {
+
+    d3.select("#histo").selectAll("svg").remove();
+    
+    // ************** Generate the tree diagram	 *****************
+    var svg = d3.select("#histo").append("svg").attr("width", 500).attr("height", 300),
+        width = +svg.attr("width"),
+        height = +svg.attr("height"),
+        g = svg.append("g").attr("transform", "translate(60,0)");
+
+
+
+    //Tooltip description
+    var tooltip = d3.select("#chart")
+        .append("div")
+        .attr("id", "tooltip")
+        .style("position", "absolute")
+        .style("z-index", "10")
+        .style("opacity", 0);
+    
+    
+    var tree = d3.cluster()
+        .size([height, width - 160]);
+
+    var stratify = d3.stratify()
+        .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
+
+    d3.json("france.json", function(error, treeData) {
+      if (error) throw error;
+
+      var root = d3.hierarchy(treeData);
+      tree(root);
+
+      var link = g.selectAll(".link")
+          .data(root.descendants().slice(1))
+        .enter().append("path")
+          .attr("class", "link")
+          .attr("d", function(d) {
+            return "M" + d.y + "," + d.x
+                + "C" + (d.parent.y + 100) + "," + d.x
+                + " " + (d.parent.y + 100) + "," + d.parent.x
+                + " " + d.parent.y + "," + d.parent.x;
+          });
+
+      var node = g.selectAll(".node")
+          .data(root.descendants())
+        .enter().append("g")
+          .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+          .attr("id", function(d,i){return "node"+i;})
+          .on("mouseover", mouseover_tree)
+          .on("mouseleave", mouseleave_tree)
+          .attr("transform", function(d) { 
+            return "translate(" + d.y + "," + d.x + ")"; 
+          });
+
+      node.append("circle")
+          .attr("class", function(d,i){return "node"+i;})
+          .attr("r", 10);
+
+      node.append("text")
+          .attr("class", function(d,i){return "node"+i;})
+          .attr("dy", function(d) { return d.children ? -8 : 0; })
+          .attr("x", function(d) { return d.children ? 4 : 12; })
+          .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+          .text(function(d) { 
+            return d.data.name;
+          })
+          .style("opacity", 0);
+    });
+
+
+}
+
+
+
+// Fade all but the current sequence, and show it in the breadcrumb trail.
+function mouseover_tree(d) {
+      
+  d3.select(this).selectAll("text").style("opacity", 1);
+            
+
+}
+
+function format_description_tree(d) {
+      return  '<b>' + d.name + '</b>';
+}
+
+
+
+// Restore everything to full opacity when moving off the visualization.
+function mouseleave_tree(d) {
+
+    d3.select(this).selectAll("text").style("opacity", 0);
+}
+
+function mouseMoveArc_tree (d) {
+          return tooltip
+            .style("top", (d3.event.pageY-10)+"px")
+            .style("left", (d3.event.pageX+10)+"px");
+}
+
+
+
+</script>

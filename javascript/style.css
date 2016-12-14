@@ -1,0 +1,123 @@
+/* Styles go here */
+
+
+
+#main {
+  float: left;
+  width: 100%;
+}
+
+#sidebar {
+  float: right;
+  width: 100%;
+}
+
+
+
+#sequence text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  fill: #fff;
+}
+
+#chart {
+  position: relative;
+}
+
+#chart path {
+  stroke: #fff;
+}
+
+#barchart {
+  position: absolute;
+  top: 260px;
+  left: 750px;
+  width: 300px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+}
+
+
+#barchart rect {
+  fill: steelblue;
+}
+
+#Barchart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+#tooltip { background-color: white;
+			  padding: 3px 5px;
+			  border: 1px solid black;
+			  text-align: center;}
+			  
+table{
+  border-collapse: collapse;
+  border: 2px solid;
+  width: 100%;
+  }
+  
+tr{
+  border:3px solid;
+}
+
+th{
+  border:3px solid;
+} 
+
+td{
+  border:3px solid;
+}
+
+#sun{
+  width: 70%;
+}
+
+#graphe{
+  width: 30%;
+}
+
+#info{
+  height: 20px;
+}
+
+
+.content{
+    height:224px;
+    overflow:auto;
+    background:#FFFFFF;
+}
+
+
+
+
+.node circle {
+  fill: #999;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.node--internal circle {
+  fill: #555;
+}
+
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #555;
+  stroke-opacity: 0.4;
+  stroke-width: 1.5px;
+}
+
+
+};
+
