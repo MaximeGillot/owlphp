@@ -4,13 +4,21 @@ Linked Data Viewer Project in PHP 7 &amp; JS
 ## Dev Env Installation (linux)
 Presuppose: python3 is already installed.
 
+* Installing Apache2 server
+
+`sudo apt-get install apache2`
+
 * Installing php7.0
 
 `sudo apt-get install php7.0`
 
+* Installing the good lib to run php7 on apache2
+
+`sudo apt-get install libapache2-mod-php7.0`
+
 * Installing a URL request library
 
-`sudo apt-get install curl`
+`sudo apt-get install php7.0-curl`
 
 ## Git Manual
 
