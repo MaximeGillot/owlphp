@@ -2,6 +2,7 @@
 
 require_once("requetes.php");
 
+$JSON_DIR = "./json_files/";  // TODO arborescence selon ontologie ? 
 
 class tree
 {
@@ -41,7 +42,6 @@ class tree
 				for ($j=0; $j < count($all_wiki); $j++)
 				{ 
 					$treeFils->addObject($all_wiki[$j]);
-
 				}
 				array_push($this->fils, $treeFils);
 			}
@@ -55,51 +55,103 @@ class tree
 		}
 	}
 
-
-	public function from_tree_2_json()
+	//a revoir 
+	public function clean_arbre()
 	{
-		$file = fopen('test.json', 'a+');
-		fputs($file,"{");
-
-		fputs($file, "\"name\" : \"".$this->type."\",\n");
-		fputs($file, "\"description\" : \"\",\n");
-		fputs($file, "\"size\" : 3938,\n");
-		fputs($file, "\"children\" : [\n");
-
-
-		if (count($this->object) > 0 ) 
+		foreach ($this->fils as  $fils) 
 		{
-			$nb_object_current = count($this->object);
-			for ($i=0; $i < $nb_object_current ; $i++) 
-			{ 
-				$insert = "";
-				$insert.= "{\n";
-				$insert.= "\"name\" : \"".$this->object[$i]."\",\n";
-				$insert.= "\"description\" : \"\",\n";
-				$insert.= "\"size\" : 3938,\n";
-				$insert.= "\"children\" : []\n";
-				$insert.= "}";
-				if ($i < $nb_object_current-1 )
-				{
-					$insert.= ",\n";
-				}
-				fputs($file,$insert);
-			}
+			$tmp = array();
+			$tmp = array_diff($this->object , $fils->object);
+			$this->object = $tmp;
 		}
 		
 
-		if (count($this->fils) > 0 ) 
-		{
-			$insert.= ",\n";
+		foreach ($this->fils as $key => $fils)
+		 {
+			$fils->clean_arbre();
 		}
+	}
+
+	//permemt de savoir si le fils en cours est le dernier consuler , pour afficher ou non une virgule
+	// niveau est juste utiliser pour l'indentation , fixer à 0 de base
+	public function from_tree_2_json($last,$niveau)
+	{
+
+		echo $this->type;
+		/*
+		if(isset($filename)){
+			$file = fopen($GLOBALS['JSON_DIR'].$filename.'.json', 'a+');
+		}else{
+			$file = fopen('test.json', 'a+');
+		}*/
+
+		$file = fopen('test.json', 'a+');
+
+		$begin = "";
+		$begin .= add_tab($niveau) .  "{\n";
+		$begin .= add_tab($niveau) .  "\"name\" : \"".$this->type."\",\n";
+		$begin .= add_tab($niveau) .  "\"description\" : \"\",\n";
+		$begin .= add_tab($niveau) .  "\"size\" : 3938,\n";
+		$begin .= add_tab($niveau) .  "\"children\" : [\n";
+		fputs($file,$begin);
+
+		/*
+		$insert = "";
+		if ( (count($this->object) > 0) && (count($this->fils) < 1) ) 
+		{
+			foreach ($this->object as  $value) 
+			{
+				$insert.= "{\n";
+				$insert.= "\"name\" : \"".$value."\",\n";
+				$insert.= "\"description\" : \"\",\n";
+				$insert.= "\"size\" : 3938,\n";
+				$insert.= "\"children\" : []\n";
+				$insert.= "},";
+			}
+		}
+
+		if (count($this->fils) < 0 ) 
+		{
+			//supprime le dernier caracter
+			$insert = substr($insert,0,strlen($insert)-1);
+		}*/
+
+		//fputs($file,$insert);
 
 		for ($i=0; $i < count($this->fils) ; $i++) 
 		{ 
-			$this->fils[$i]->from_tree_2_json();
+			if ($i == count($this->fils)-1) 
+			{
+
+				$this->fils[$i]->from_tree_2_json(true,$niveau+1);
+			}
+			else
+			{
+				$this->fils[$i]->from_tree_2_json(false,$niveau+1);
+
+			}
 		}
-		fputs($file,"]\n");
-		fputs($file,"}\n,");
+
+		fputs($file,add_tab($niveau)."]\n");
+		if ($last == false) 
+		{
+			fputs($file,add_tab($niveau)."},\n");
+		}
+		else
+		{
+			fputs($file,add_tab($niveau)."}\n");
+		}
 	}
+}
+
+
+function add_tab($int)
+{
+	$string = "";
+	for ($i=0; $i < $int; $i++) { 
+		$string.="\t";
+	}
+	return $string;
 }
 
 
