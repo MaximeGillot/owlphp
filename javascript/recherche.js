@@ -2,21 +2,36 @@ var objetrecherche;
 
 console.log(objetrecherche);
 
-function Search(){
+function Search(subject){
 
     //emplacement pour appel fonction de creation du fichier JSON
 
     //re-initialisation
-    ChangeFile()
+    //ChangeFile()
     //filename == "test.json"
 
     
     historique = "name,relation,parent";
     elem = "";
 
-    createVisualization();
-}
+    var filename = '../json_files/'+subject;
 
+    if(filename){
+        /*
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.innerHTML = this.responseText;
+        }
+        };
+        xhttp.open("GET", "javascript/index.html", true);
+        xhttp.send({'filename':filename});
+        */
+        createVisualization(filename);
+    }else{
+        createVisualization();
+    }
+}
 
 
 function ChargerCSV(){
@@ -30,10 +45,9 @@ function ChargerCSV(){
     //TreeCSV(f);
 }
 
-
 //fonction temporaire pour effectuer des tests
 function ChangeFile(){
-    if(filename == ""){
+    if(filename == ""){ // Il est defini ou filename ?
         filename = "Europe.json";
     }else if(filename == "Europe.json"){
         filename = "France.json";
@@ -41,3 +55,16 @@ function ChangeFile(){
         filename = "Bretagne.json";
     }
 }
+/*
+function ajax_mtree(){
+    var opts = {
+        method: 'GET',
+        body: 'json',
+        headers: {}
+    };
+    fetch('/get-data', opts).then(function (response) {
+    return response.json();
+    }).then(function (body) {
+        // load
+    });
+}*/

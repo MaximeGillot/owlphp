@@ -2,6 +2,7 @@
 
 require_once("requetes.php");
 
+$JSON_DIR = "./json_files/";  // TODO arborescence selon ontologie ? 
 
 class tree
 {
@@ -53,9 +54,17 @@ class tree
 	}
 
 
-	public function from_tree_2_json()
+	public function from_tree_2_json($filename)
 	{
-		$file = fopen('test.json', 'a+');
+
+		if(isset($filename)){
+			$file = fopen($GLOBALS['JSON_DIR'].$filename.'.json', 'a+');
+		}else{
+			$file = fopen('test.json', 'a+');
+		}
+
+		die;
+
 		fputs($file,"{");
 
 		fputs($file, "\"name\" : \"".$this->type."\",\n");

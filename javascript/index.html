@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-/* Styles go here */
-
-
 
 #main {
   float: left;
@@ -116,12 +113,18 @@ td{
 };
 
 </style>
+  <head>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v0.3.js"></script>
+    <!-- TODO call style.css here --> 
+  </head>
   <body id="body">
     <div id="main">
-        <input type="text" id="recherche" />
-          <a href="main.html">
-             <button>Recherche</button>
-          </a>
+          <form action="../main.php" method="get">
+              <input type="text" name="subject" />
+              <input type="submit" value="Recherche" onclick="ajax_mtree()" />
+          </form>
       <table id="table">
 
         <tr id="sun">
@@ -143,9 +146,6 @@ td{
       </table>
     </div>
   </body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="https://d3js.org/d3.v4.js"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v0.3.js"></script>
 <script>
 // Dimensions of sunburst.
 var width = 1000;
@@ -195,8 +195,16 @@ var nodes;
 createVisualization();
 
 // Main function to draw and set up the visualization, once we have the data.
-function createVisualization() {
-    d3.json("france.json", function(error, json) {
+function createVisualization(file_existin) {
+
+    var filename = "france.json"
+
+    if(file_existin){
+      filename = file_existin;
+      alert(filename);
+    }
+
+    d3.json(filename, function(error, json) {
 
           // Basic setup of page elements.
           initializeBreadcrumbTrail();
@@ -222,17 +230,17 @@ function createVisualization() {
               .data(nodes)
               .enter()
               .append("svg:path")
-                .attr("id", function(d,i) { return "Arc_"+i; }) //Give each slice a unique ID
-                .attr("class", "Arc")
-                //.text(function(d){return d.name;})
-                .attr("display", function(d) { return d.depth ? null : "none"; })
-                .attr("d", arc)
-                .attr("fill-rule", "evenodd")
-                .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
-                .style("opacity", 1)
-                .on("mouseover", mouseover)
-                .on("mousemove", mouseMoveArc)
-                .on("click", click).each(stash);
+              .attr("id", function(d,i) { return "Arc_"+i; }) //Give each slice a unique ID
+              .attr("class", "Arc")
+              //.text(function(d){return d.name;})
+              .attr("display", function(d) { return d.depth ? null : "none"; })
+              .attr("d", arc)
+              .attr("fill-rule", "evenodd")
+              .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
+              .style("opacity", 1)
+              .on("mouseover", mouseover)
+              .on("mousemove", mouseMoveArc)
+              .on("click", click).each(stash);
   
            var text = vis.selectAll(".arcText")
               .data(nodes)   
