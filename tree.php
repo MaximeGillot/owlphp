@@ -63,8 +63,6 @@ class tree
 			$file = fopen('test.json', 'a+');
 		}
 
-		die;
-
 		fputs($file,"{");
 
 		fputs($file, "\"name\" : \"".$this->type."\",\n");

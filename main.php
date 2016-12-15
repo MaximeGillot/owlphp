@@ -37,7 +37,7 @@ function make_tree($subject){
 
 		// get_all_subclass("owl:Thing");
 		// get_all_wikiLink_of_type("France","http://dbpedia.org/ontology/Agent");
-		// $tree->auto_complete($subject);  // Get subclasses
+		$tree->auto_complete($subject);  // Get subclasses
 
 		print_r($tree);
 
