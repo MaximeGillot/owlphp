@@ -28,26 +28,26 @@ var test_csv = "name,relation,parent\n" +
                 ;
 
 
-
 function CSV_JSON(csv){
     buildHistorique(csv)
     //console.log(historique);
     data = d3.csv.parse(historique, function(d) {
         return {
-            name:d.name, 
-            relation:d.relation,
-            parent:+d.parent
+            name:d.name
         };
     });
         // *********** Convert flat data into a nice tree ***************
     // create a name: node map
     var dataMap = data.reduce(function(map, node) {
 	    map[node.name] = node;
+	    map[node.description] = "";
+	    map[node.size] = 3938;
 	    return map;
     }, {});
+    
+    //console.log(dataMap);
+    
     // create the tree array
-    
-    
     var treeData = [];
     data.forEach(function(node) {
 	    // add to parent
@@ -67,9 +67,9 @@ function CSV_JSON(csv){
     
     //console.log(JSON.stringify(treeData, null, 3));
     
-    return JSON.stringify(treeData, null, 3);
+    //return JSON.stringify(treeData, null, 3);
+    return treeData;
 }
-
 
 
 
@@ -92,7 +92,6 @@ function updateCSV(objet1, objet2){
 }
 
 
-
 ///reforme l'historique après chargement de fichier
 function buildHistorique(csv){
     historique += "\n";
@@ -108,7 +107,6 @@ function buildHistorique(csv){
 
 
 
->>>>>>> 5c2b32b6e4191246d2b0a8d8cfc60144af30843c
 // check que la ligne n'est pas déja presente
 function searchCSV(objet1, objet2){
 
@@ -137,11 +135,6 @@ function DisplayCSV(){
         d3.select("#info").attr("height", "20px").selectAll("div")
           .append("p").text(lines);
     }
-
-    
-    
-}
-
 }
 
 

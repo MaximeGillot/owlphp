@@ -9,7 +9,6 @@
             "size": 3938,
             "children": [
                 {
-<<<<<<< HEAD
                     "name": "Maurbian",
                     "description": "",
                     "size": 3938
@@ -18,32 +17,12 @@
                     "name": "Finister",
                     "description": "",
                     "size": 3938
-=======
-                    "name": "Morbihan",
-                    "description": "",
-                    "size": 3938,
-                },
-                {
-                    "name": "Finistère",
-                    "description": "",
-                    "size": 3938,
->>>>>>> 5c2b32b6e4191246d2b0a8d8cfc60144af30843c
                 },
                 {
                     "name": "Ile et Vilaine",
                     "description": "",
-<<<<<<< HEAD
                     "size": 3938
                 }
-=======
-                    "size": 3938,
-                },
-                {
-                    "name": "Côte d'armor",
-                    "description": "",
-                    "size": 3938,
-                },
->>>>>>> 5c2b32b6e4191246d2b0a8d8cfc60144af30843c
             ]
         }
     ]

@@ -1,66 +1,68 @@
 
-
-// Dimensions of sunburst.
-var width = 1000;
-var widthc = width;
-var height = 700;
-var heightc = height;
-var radius = Math.min(width, height) / 2;
-var color = d3.scale.category20c();
-
-// Breadcrumb dimensions: width, height, spacing, width of tip/tail.
-var b = { w: 125, h: 50, s: 3, t: 50 };
-
-// make `colors` an ordinal scale
-var colors = d3.scale.category20c();
-
-// Total size of all segments; we set this later, after loading the data.
-var totalSize = 0; 
-
-var vis = d3.select("#chart").append("svg:svg")
-    .attr("width", width)
-    .attr("height", height)
-    .append("svg:g")
-    .attr("id", "container")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-var partition = d3.layout.partition()
-    .size([2 * Math.PI, radius * radius])
-    .value(function(d) { return d.size; });//a modifier suivant le fichier en entrée
-
-var arc = d3.svg.arc()
-    .startAngle(function(d) { return d.x; })
-    .endAngle(function(d) { return d.x + d.dx; })
-    .innerRadius(function(d) { return Math.sqrt(d.y); })
-    .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
-
-
-//Tooltip description
-var tooltip = d3.select("#chart")
-    .append("div")
-    .attr("id", "tooltip")
-    .style("position", "absolute")
-    .style("z-index", "10")
-    .style("opacity", 0);
-
-var nodes;
-
-//nom de fichier JSON de reférence
-var filename = "";
-
-
 // Main function to draw and set up the visualization, once we have the data.
 function createVisualization() {
-  d3.select("#container").selectAll("path").remove();
-  d3.select("#container").selectAll(".centre").remove();
-  d3.select("#container").selectAll(".arcText").remove(); 
-  d3.selectAll("#trail").remove(); 
+      d3.select("#container").selectAll("path").remove();
+      d3.select("#container").selectAll(".centre").remove();
+      d3.select("#container").selectAll(".arcText").remove(); 
+      d3.selectAll("#trail").remove(); 
+      d3.select("#chart").selectAll("svg").remove(); 
+      
+      
+    // Dimensions of sunburst.
+    var width = 1000;
+    var widthc = width;
+    var height = 700;
+    var heightc = height;
+    var radius = Math.min(width, height) / 2;
+    var color = d3.scale.category20c();
+
+    // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
+    var b = { w: 125, h: 50, s: 3, t: 50 };
+
+    // make `colors` an ordinal scale
+    var colors = d3.scale.category20c();
+
+    // Total size of all segments; we set this later, after loading the data.
+    var totalSize = 0; 
+
+    var vis = d3.select("#chart").append("svg:svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("svg:g")
+        .attr("id", "container")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var partition = d3.layout.partition()
+        .size([2 * Math.PI, radius * radius])
+        .value(function(d) { return d.size; });//a modifier suivant le fichier en entrée
+
+    var arc = d3.svg.arc()
+        .startAngle(function(d) { return d.x; })
+        .endAngle(function(d) { return d.x + d.dx; })
+        .innerRadius(function(d) { return Math.sqrt(d.y); })
+        .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
+
+
+    //Tooltip description
+    var tooltip = d3.select("#chart")
+        .append("div")
+        .attr("id", "tooltip")
+        .style("position", "absolute")
+        .style("z-index", "10")
+        .style("opacity", 0);
+
+    var nodes;
+
+
+
+
+
   
   
     //console.log(filename);
     d3.json(filename, function(error, json) {
           elem = json.name; //initJSON(elem);
-            
+          console.log(json);
           // Basic setup of page elements.
           initializeBreadcrumbTrail();
           
@@ -103,9 +105,11 @@ function createVisualization() {
               .attr("dy", 18) //Move the text down
               .append("textPath")
               .attr("startOffset","25%")
-              .attr("xlink:href",function(d,i){return "#Arc_"+i;})    
+              .attr("xlink:href",function(d,i){return "#Arc_"+i;})  
+              .on("click", click).each(stash)  
+              //.text(function(d){if(d.children.length < 1){return d.name;}});
               .text(function(d){return d.name;});
-                
+             
            path.transition()
               .duration(750)
               .attrTween("d", arcTween);
@@ -125,104 +129,14 @@ function createVisualization() {
     //console.log(elem);
     if(elem !== ""){Tree();}
     
- };
+
  
  
-<<<<<<< HEAD
-=======
- // Main function to draw and set up the visualization, once we have the data.
-function createVisualizationCSV(file) {
-  d3.select("#container").selectAll("path").remove();
-  d3.select("#container").selectAll(".centre").remove();
-  d3.select("#container").selectAll(".arcText").remove(); 
-  d3.selectAll("#trail").remove(); 
-  
-  
-    //console.log(filename);
-    d3.csv(file, function(error, csv) {
-        //d3.csv(JSON.parse(CSV_JSON(csv)), function(error, json) {
-        //var json = JSON.parse(CSV_JSON(csv));
-        //console.log(JSON.parse(CSV_JSON(csv)));
-        var json = JSON.parse(CSV_JSON(csv));
-        //console.log(JSON.parse(CSV_JSON(csv)));
-        json.forEach(function (d) {
-            d.name = d.name;
-            d.relation = d.relation;
-            d.parent = d.parent;
-            });
-        console.log(json);
-          //elem = json.name; //initJSON(elem);
-            
-          // Basic setup of page elements.
-          initializeBreadcrumbTrail();
-          
-          // Bounding circle underneath the sunburst, to make it easier to detect
-          // when the mouse leaves the parent g.
-          vis.append("svg:circle")
-              .attr("r", radius)
-              .style("opacity", 0).append("path");
 
-          // For efficiency, filter nodes to keep only those large enough to see.
-          nodes = partition.nodes(json)
-              .filter(function(d) {
-              return (d.dx > 0.005); // 0.005 radians = 0.29 degrees
-              });        
-
-       
-          var path = vis.data(json).selectAll("path")
-              .data(nodes)
-              .enter()
-              .append("svg:path")
-                .attr("id", function(d,i) { return "Arc_"+i; }) //Give each slice a unique ID
-                .attr("class", "Arc")
-                //.text(function(d){return d.name;})
-                .attr("display", function(d) { return d.depth ? null : "none"; })
-                .attr("d", arc)
-                .attr("fill-rule", "evenodd")
-                .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
-                .style("opacity", 1)
-                .on("mouseover", mouseover)
-                .on("mousemove", mouseMoveArc)
-                .on("click", click).each(stash);
-  
-           var text = vis.selectAll(".arcText")
-              .data(nodes)   
-              .enter()
-              .append("text")
-              .attr("class", "arcText")
-              .style("text-anchor","middle")
-              //.attr("x", 5) //Move the text from the start angle of the arc
-              .attr("dy", 18) //Move the text down
-              .append("textPath")
-              .attr("startOffset","25%")
-              .attr("xlink:href",function(d,i){return "#Arc_"+i;})    
-              .text(function(d){return d.name;});
-                
-           path.transition()
-              .duration(750)
-              .attrTween("d", arcTween);
-              
-
-
-          // Add the mouseleave handler to the bounding circle.
-          d3.select("#container").on("mouseleave", mouseleave);
-
-          // Get total size of the tree = value of root node from partition.
-          totalSize = path.node().__data__.value;
-          
-
-    });
-    
-    
-    //console.log(elem);
-    if(elem !== ""){Tree();}
-    //});
- };
  
 
  
  
->>>>>>> 5c2b32b6e4191246d2b0a8d8cfc60144af30843c
  //actions when click 
 function click(d)
 {
@@ -232,13 +146,25 @@ function click(d)
   d3.selectAll("#trail").remove(); 
   
   
-  //var sequenceArray = getAncestors(d);
+  
   
     //verifie que l'on prend un objet d et non une relation d
-  if(d.children){
+    /*
+  if(d.chidren.length() > 0){
+    console.log(d.children);
   }else{
     updateCSV(d.parent, d);
-    //elem = d.name;
+    //console.log(d.name);
+    elem = d.name;
+    ChangeFile();
+  }*/
+
+  var i = d.chidren;
+  //console.log(i);
+  
+  if(i == undefined || d.children.length < 1){
+    updateCSV(d.parent, d);
+    elem = d.name;
     ChangeFile();
   }
   
@@ -247,11 +173,8 @@ function click(d)
     
 }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 5c2b32b6e4191246d2b0a8d8cfc60144af30843c
 function arcTween(a){
                     var i = d3.interpolate({x: a.x0, dx: a.dx0}, a);
                     return function(t) {
@@ -404,7 +327,7 @@ function updateBreadcrumbs(nodeArray) {
 
 }
 
-
+ };
 
 
 //createVisualization();

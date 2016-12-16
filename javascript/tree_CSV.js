@@ -66,7 +66,7 @@ function Tree(){
       root = treeData[0];
       
       
-      
+      //console.log(root);
       // Compute the new tree layout.
       var nodes = tree.nodes(root).reverse(),
 	      links = tree.links(nodes);
@@ -85,7 +85,8 @@ function Tree(){
 		      return "translate(" + d.y + "," + d.x + ")"; });
 
       nodeEnter.append("circle")
-	      .attr("r", 10);
+	      .attr("r", 10)
+	      .on("click", clickNode);
 
       nodeEnter.append("text")
 	      .attr("x", function(d) { 
@@ -105,9 +106,19 @@ function Tree(){
 	      .attr("class", "link")
 	      .attr("d", diagonal);
 }
-<<<<<<< HEAD
-=======
 
+function clickNode(d){
+    //console.log(d.name);
+    ChargerFile(d);
+    
+    createVisualization();
+}
 
+function ChargerTree(file){
+    d3.csv(file, function(error, csv) {
+        var json = CSV_JSON(csv);
+        Tree();
+        DisplayCSV();
+    });
+}
 
->>>>>>> 5c2b32b6e4191246d2b0a8d8cfc60144af30843c
