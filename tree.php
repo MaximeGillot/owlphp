@@ -58,26 +58,47 @@ class tree
 	//a revoir 
 	public function clean_arbre()
 	{
-		foreach ($this->fils as  $fils) 
+
+		foreach ($this->object as $key => $value) 
 		{
-			$tmp = array();
-			$tmp = array_diff($this->object , $fils->object);
-			$this->object = $tmp;
+			if ($this->value_in_double($value) >= 2)
+			{
+				unset($this->object[$key]);
+			}
 		}
 		
-
 		foreach ($this->fils as $key => $fils)
-		 {
+		{
 			$fils->clean_arbre();
 		}
 	}
 
-	//permemt de savoir si le fils en cours est le dernier consuler , pour afficher ou non une virgule
+	//determiner si une uri est en double dans l'arbre
+	public function value_in_double($uri)
+	{
+		$nb = 0 ;
+		foreach ($this->object as $key => $value)
+		 {
+			if ($value == $uri) 
+			{
+				$nb++;
+			}
+		}
+
+		foreach ($this->fils as $key => $value) 
+		{
+			$nb += $value->value_in_double($uri);
+		}
+
+		return $nb;
+	}
+
+
+	//permemt de savoir si le fils en cours est le dernier consuler , pour afficher ou non une virgule , fixer à true par défautl
 	// niveau est juste utiliser pour l'indentation , fixer à 0 de base
-	public function from_tree_2_json($last,$niveau)
+	public function from_tree_2_json($last = true , $niveau = 0 )
 	{
 
-		echo $this->type;
 		/*
 		if(isset($filename)){
 			$file = fopen($GLOBALS['JSON_DIR'].$filename.'.json', 'a+');
@@ -95,28 +116,26 @@ class tree
 		$begin .= add_tab($niveau) .  "\"children\" : [\n";
 		fputs($file,$begin);
 
-		/*
+		
 		$insert = "";
-		if ( (count($this->object) > 0) && (count($this->fils) < 1) ) 
+		foreach ($this->object as  $value) 
 		{
-			foreach ($this->object as  $value) 
-			{
-				$insert.= "{\n";
-				$insert.= "\"name\" : \"".$value."\",\n";
-				$insert.= "\"description\" : \"\",\n";
-				$insert.= "\"size\" : 3938,\n";
-				$insert.= "\"children\" : []\n";
-				$insert.= "},";
-			}
+			$insert.= "{\n";
+			$insert.= "\"name\" : \"".$value."\",\n";
+			$insert.= "\"description\" : \"\",\n";
+			$insert.= "\"size\" : 3938,\n";
+			$insert.= "\"children\" : []\n";
+			$insert.= "},";
 		}
+		
 
-		if (count($this->fils) < 0 ) 
+		if (count($this->fils) == 0 ) 
 		{
 			//supprime le dernier caracter
 			$insert = substr($insert,0,strlen($insert)-1);
-		}*/
+		}
 
-		//fputs($file,$insert);
+		fputs($file,$insert);
 
 		for ($i=0; $i < count($this->fils) ; $i++) 
 		{ 
