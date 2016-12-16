@@ -62,7 +62,7 @@ function createVisualization() {
     //console.log(filename);
     d3.json(filename, function(error, json) {
           elem = json.name; //initJSON(elem);
-          console.log(json);
+          //console.log(json);
           // Basic setup of page elements.
           initializeBreadcrumbTrail();
           
@@ -72,11 +72,8 @@ function createVisualization() {
               .attr("r", radius)
               .style("opacity", 0).append("path");
 
-          // For efficiency, filter nodes to keep only those large enough to see.
-          nodes = partition.nodes(json)
-              .filter(function(d) {
-              return (d.dx > 0.005); // 0.005 radians = 0.29 degrees
-              });        
+
+          nodes = partition.nodes(json);        
 
        
           var path = vis.data([json]).selectAll("path")
@@ -160,11 +157,12 @@ function click(d)
   }*/
 
   var i = d.chidren;
-  //console.log(i);
   
-  if(i == undefined || d.children.length < 1){
+  
+  if(d.children.length < 1){
     updateCSV(d.parent, d);
     elem = d.name;
+    //console.log(d.children.length);
     ChangeFile();
   }
   

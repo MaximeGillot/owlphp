@@ -44,15 +44,20 @@ function createVisualization2() {
 
   
   
-    d3.json(filename, function(error, root) {
+    d3.json(filename, function(error, json) {
     
-    console.log(JSON.stringify(root, null, 3));
-    
+        elem = json.name;
+        //console.log(JSON.stringify(root, null, 3));
+        //console.log(elem);
     
       if (error) throw error;
       
+
+          root = partition.nodes(json);
+      
+      
       svg.selectAll("path")
-          .data(partition.nodes(root))
+          .data(root)
         .enter().append("path")
           .attr("id", function(d,i) { return "Arc_"+i; }) //Give each slice a unique ID
           .attr("d", arc)
@@ -60,7 +65,7 @@ function createVisualization2() {
           .on("click", click);
           
        svg.selectAll(".arcText")
-          .data(partition.nodes(root))
+          .data(root)
           .enter()
           .append("svg:text")
           .attr("class", "arcText")
@@ -70,12 +75,15 @@ function createVisualization2() {
           .attr("startOffset","25%")
           .attr("xlink:href",function(d,i){return "#Arc_"+i;}) 
           .text(function(d){return d.name;})
-          .each("end", function(e) {
-                d3.select(this).style("visibility", function(e){ isParentOf(d, e) ? null : d3.select(this).style("visibility"); });
-            });
+          .on("click", click);
     });
 
+    
 
+    var feuille = false;
+    
+    if(elem !== ""){Tree();}
+    
     function click(d) {
       svg.transition()
           .duration(750)
@@ -88,11 +96,36 @@ function createVisualization2() {
         .selectAll("path")
           .attrTween("d", function(d) { return function() { return arc(d); }; });
           
-       d3.selectAll(".arcText")
-         .style("visibility", function(e) {
-            return isParentOf(d, e) ? null : d3.select(this).style("visibility");
-            });
+        var i = d.chidren;
+        //console.log(d);
+     /*   
+        if(d.children.length < 1){
+            NewSearch(d)
+        }
+ */       
+        if(feuille == false){
+            if(d.children || d.children.length < 1){
+                feuille = true;
+            }
+        }else{
+            NewSearch(d);
+            feuille = false;
+        }
 
+    }
+    
+    function NewSearch(d){
+          var i = d.chidren;
+          if(d.children.length < 1){
+            updateCSV(d.parent, d);
+            elem = d.name;
+            //console.log(d.children.length);
+            ChangeFile();
+          }
+  
+       // console.log(d.name);
+        DisplayCSV();
+        createVisualization2();
     }
     
     function isParentOf(p, c) {
