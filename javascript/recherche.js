@@ -32,7 +32,7 @@ function Search(){
     x += ".json";
 
     //si le fichier existe on le choisit
-    if (fileExists(x)) 
+    if (fileExists(x) != false) 
     {
 
         filename = x ;
@@ -81,18 +81,17 @@ function ChargerCSV(){
 //fonction temporaire pour effectuer des tests
 function ChangeFile(){
 
-    if(filename == ""){
-        filename = "Europe.json";
-    }else if(filename == "Europe.json"){
-        filename = "France.json";
-    }else if(filename == "France.json"){
-        filename = "Bretagne.json";
-    }
-
-    /*
-    var file = elem + ".json";
+    var file = "json/" + elem + ".json";
     filename = file;
-    */
+
+    //si le fichier existe pas
+    if (fileExists(file) == false) 
+    {
+        // appel en ajax pour le crée 
+        filename = "json/Europe.json"; // solution temporaire
+
+    }
+    
 }
 
 
