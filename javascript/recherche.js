@@ -4,6 +4,18 @@ var filename = "";
 
 //console.log(objetrecherche);
 
+//determine si un fichier existe deja à l'adresse url
+function fileExists(url) {
+    if(url){
+        var req = new XMLHttpRequest();
+        req.open('GET', url, false);
+        req.send();
+        return req.status==200;
+    } else {
+        return false;
+    }
+}
+
 function Search(){
     //console.log("test");
     //emplacement pour appel fonction de creation du fichier JSON
@@ -13,10 +25,23 @@ function Search(){
     
     //filename = "flare.json"
     //filename = "test.json"
-    
-    var x = document.getElementById("recherche").value;
+
+
+    // x = chemin vers le fichier json
+    var x = "json/" + document.getElementById("recherche").value;
     x += ".json";
-    filename = x;
+
+    //si le fichier existe on le choisit
+    if (fileExists(x)) 
+    {
+
+        filename = x ;
+    }
+    else
+    {
+        //si le fichier existe pas on fait un appel en ajax pour le crée
+        filename = "json/Bretagne.json";
+    }
 
     
     historique = "name,relation,parent";
