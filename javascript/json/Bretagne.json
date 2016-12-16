@@ -1,0 +1,29 @@
+ {
+    "name": "Bretagne",
+    "description": "",
+    "size": 3938,
+    "children": [
+        {
+            "name": "aPourDepartement",
+            "description": "",
+            "size": 3938,
+            "children": [
+                {
+                    "name": "Maurbian",
+                    "description": "",
+                    "size": 3938
+                },
+                {
+                    "name": "Finister",
+                    "description": "",
+                    "size": 3938
+                },
+                {
+                    "name": "Ile et Vilaine",
+                    "description": "",
+                    "size": 3938
+                }
+            ]
+        }
+    ]
+}

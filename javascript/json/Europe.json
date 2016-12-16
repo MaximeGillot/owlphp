@@ -1,0 +1,24 @@
+ {
+    "name": "Europe",
+    "description": "",
+    "size": 3938,
+    "children": [
+        {
+            "name": "aPourPays",
+            "description": "",
+            "size": 3938,
+            "children": [
+                {
+                    "name": "France",
+                    "description": "",
+                    "size": 3938
+                },
+                {
+                    "name": "Allemagne",
+                    "description": "",
+                    "size": 3938
+                }
+            ]
+        }
+    ]
+}
