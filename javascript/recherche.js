@@ -94,8 +94,6 @@ function ChangeFile(){
     
 }
 
-
-
 //fonction temporaire pour effectuer des tests
 function ChargerFile(d){
     filename = d.name + ".json";

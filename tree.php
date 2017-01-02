@@ -4,13 +4,20 @@ require_once("requetes.php");
 
 $JSON_DIR = "./json_files/";  // TODO arborescence selon ontologie ? 
 
+
 class tree
 {
 	# tableau de toute les uri courante
 	private $object = array();
 
+	# contient la lsite des object au propre
+	private $filterObject = array();
+
 	#type courant owl:Thing pour le début
 	public $type = "";
+
+	#contient le type au propre
+	public $filterType = "";
 
 	#contient le nombre de $object ainsi que la somme des fils
 	private $nbFils = 0;
@@ -73,6 +80,27 @@ class tree
 		}
 	}
 
+	//renplie l'arbre avec des uri propre
+	public function translate_tree($langue)
+	{
+		foreach ($this->object as $key => $value) 
+		{
+			array_push($this->filterObject, get_translation_name($value,$langue));
+		}
+
+
+		if ($this->type != "owl:Thing") 
+		{
+			$this->filterType = get_type_translation_name($this->type , $langue);
+		}
+		
+
+		foreach ($this->fils as $key => $value) 
+		{
+			$value->translate_tree($langue);
+		}
+	}
+
 	//determiner si une uri est en double dans l'arbre
 	public function value_in_double($uri)
 	{
@@ -94,8 +122,8 @@ class tree
 	}
 
 
-	//permemt de savoir si le fils en cours est le dernier consuler , pour afficher ou non une virgule , fixer à true par défautl
-	// niveau est juste utiliser pour l'indentation , fixer à 0 de base
+	// @last permemt de savoir si le fils en cours est le dernier consuler , pour afficher ou non une virgule , fixer à true par défautl
+	// @niveau est juste utiliser pour l'indentation , fixer à 0 de base
 	public function from_tree_2_json($last = true , $niveau = 0 )
 	{
 
@@ -106,11 +134,17 @@ class tree
 			$file = fopen('test.json', 'a+');
 		}*/
 
+		
+		$alphabet = array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
+		//$alphabet = array("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z");
+
 		$file = fopen('test.json', 'a+');
 
 		$begin = "";
 		$begin .= add_tab($niveau) .  "{\n";
-		$begin .= add_tab($niveau) .  "\"name\" : \"".$this->type."\",\n";
+
+		$begin .= add_tab($niveau) .  "\"name\" : \"".$this->filterType."\",\n";	
+
 		$begin .= add_tab($niveau) .  "\"description\" : \"\",\n";
 		$begin .= add_tab($niveau) .  "\"size\" : 3938,\n";
 		$begin .= add_tab($niveau) .  "\"children\" : [\n";
@@ -118,21 +152,62 @@ class tree
 
 		
 		$insert = "";
-		foreach ($this->object as  $value) 
+
+		if (count($this->filterObject) > 10) 
 		{
-			$insert.= "{\n";
-			$insert.= "\"name\" : \"".$value."\",\n";
-			$insert.= "\"description\" : \"\",\n";
-			$insert.= "\"size\" : 3938,\n";
-			$insert.= "\"children\" : []\n";
-			$insert.= "},";
+			foreach ( $alphabet as $lettre ) 
+			{
+				$lettreTrouver = False ;
+				foreach ($this->filterObject as  $value) 
+				{
+					if ($value[0] == $lettre)
+					{
+						if ($lettreTrouver == False ) 
+						{
+							$insert .= add_tab($niveau) .  "{\n";
+							$insert .= add_tab($niveau) .  "\"name\" : \"".$lettre."\",\n";	
+							$insert .= add_tab($niveau) .  "\"description\" : \"\",\n";
+							$insert .= add_tab($niveau) .  "\"size\" : 3938,\n";
+							$insert .= add_tab($niveau) .  "\"children\" : [\n";
+							$lettreTrouver = True ;
+						}
+
+						$insert.= "{\n";
+						$insert.= "\"name\" : \"".$value."\",\n";
+						$insert.= "\"description\" : \"\",\n";
+						$insert.= "\"size\" : 3938,\n";
+						$insert.= "\"children\" : []\n";
+						$insert.= "},";
+					}
+				}
+
+				if ($lettreTrouver == true) 
+				{
+					$insert = substr($insert,0,strlen($insert)-1);
+					$insert .= add_tab($niveau) .  " ] \n";
+					$insert .= add_tab($niveau) .  " },";
+				}
+			}
+			
 		}
-		
+		else
+		{	
+			foreach ($this->filterObject as  $value) 
+			{
+				$insert.= "{\n";
+				$insert.= "\"name\" : \"".$value."\",\n";
+				$insert.= "\"description\" : \"\",\n";
+				$insert.= "\"size\" : 3938,\n";
+				$insert.= "\"children\" : []\n";
+				$insert.= "},";
+			}
+
+		}
 
 		if (count($this->fils) == 0 ) 
 		{
-			//supprime le dernier caracter
-			$insert = substr($insert,0,strlen($insert)-1);
+		//supprime le dernier caracter
+		$insert = substr($insert,0,strlen($insert)-1);
 		}
 
 		fputs($file,$insert);

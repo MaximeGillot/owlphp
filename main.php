@@ -35,14 +35,38 @@ function make_tree($subject){
 			$tree->addObject($request[$i]);  // First node
 		}
 
+		//print_r(get_translation_name("http://fr.dbpedia.org/resource/France","it"));
 		// get_all_subclass("owl:Thing");
-		// get_all_wikiLink_of_type("France","http://dbpedia.org/ontology/Agent");
+		//print_r( get_all_wikiLink_of_type("France","http://dbpedia.org/ontology/Agent"));
+		$timestamp_debut = microtime(true);
 		$tree->auto_complete($subject);  // Get subclasses
+		$timestamp_fin = microtime(true); 
+		$time = $timestamp_fin - $timestamp_debut;
+		echo 'fonction auto-complete : ' . $time . ' secondes.';
+		echo "<br/>";
+
+		$timestamp_debut = microtime(true);
 		$tree->clean_arbre();
+		$timestamp_fin = microtime(true); 
+		$time = $timestamp_fin - $timestamp_debut;
+		echo 'fonction clean-arbre : ' . $time . ' secondes.';
+		echo "<br/>";
+		
 
-		print_r($tree);
+		$timestamp_debut = microtime(true);
+		$tree->translate_tree("fr");
+		$timestamp_fin = microtime(true); 
+		$time = $timestamp_fin - $timestamp_debut;
+		echo 'fonction de translation de larbre : ' . $time . ' secondes.';
 
-		$tree->from_tree_2_json(true,0);  // TODO revoir le JSON (manque virgule)
+		$tree->filterType = $subject;
+
+		echo "<br/>";
+		$timestamp_debut = microtime(true);
+		$tree->from_tree_2_json(true,0); 
+		$timestamp_fin = microtime(true); 
+		$time = $timestamp_fin - $timestamp_debut;
+		echo 'fonction tree 2 json : ' . $time . ' secondes.';
 	}
 }
 

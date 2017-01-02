@@ -40,16 +40,15 @@ function get_all_subclass($type)
 	$tab = array();
 	#ATTENTION ENDPOINT DIFFERENT
 	$db = sparql_connect( "http://dbpedia.org/sparql" );
-	#if( !$db ) { print sparql_errno() . ": " . sparql_error(). "\n"; exit; }
 
 	$sparql = "";
 
 	if ($type == "owl:Thing") 
 	{
 		$sparql = "
-				SELECT ?class
+				SELECT ?class 
                 WHERE {
-                        ?class rdfs:subClassOf owl:Thing.
+                      ?class rdfs:subClassOf owl:Thing.
                       }";
 	}
 	else
@@ -57,12 +56,12 @@ function get_all_subclass($type)
 		$sparql = "
 				SELECT ?class
                 WHERE {
-                        ?class rdfs:subClassOf <".$type.">.
+                      ?class rdfs:subClassOf <".$type.">.
                       }";
 	}
 
 	$result = sparql_query( $sparql ); 
-	#if( !$result ) { print sparql_errno() . ": " . sparql_error(). "\n"; exit; }
+	if( !$result ) { print sparql_errno() . ": " . sparql_error(). "\n"; exit; }
 	 
 	$fields = sparql_field_array( $result );
 	
@@ -74,8 +73,8 @@ function get_all_subclass($type)
 		{
 			if ($i % 2 == 0) 
 			{
-				#echo $row[$field];
-				#echo "</br>";
+				//echo $row[$field];
+				//echo "<br/>";
 				array_push($tab, $row[$field]);
 			}
 		}	
@@ -87,7 +86,7 @@ function get_all_subclass($type)
 function get_all_wikiLink_of_type($subject , $string_type )
 {
 	$tab = array();
-	#ATTENTION ENDPOINT DIFFERENT
+	
 	$db = sparql_connect( "http://fr.dbpedia.org/sparql" );
 	#if( !$db ) { print sparql_errno() . ": " . sparql_error(). "\n"; exit; }
 
@@ -111,18 +110,98 @@ function get_all_wikiLink_of_type($subject , $string_type )
 	{
 
 		foreach( $fields as $field )
-		{
-			if ($i % 2 == 0) 
-			{
-				#echo $row[$field];
-				#echo "</br>";
+		{			
+				//echo $row[$field];
+				//echo "<br/>";
 				array_push($tab, $row[$field]);
-			}
 		}	
 		$i++;
 	}
 	return $tab;
 }
 
+//$uri = ressoruce dbpedia
+//$language = langue à choisir , fr , it , de . . .
+// renvoie directement la valeur dans le $language choisit
+function get_translation_name($uri , $language )
+{
+	$tab = array();
+	
+	$db = sparql_connect( "http://fr.dbpedia.org/sparql" );
+	#if( !$db ) { print sparql_errno() . ": " . sparql_error(). "\n"; exit; }
+
+
+		$sparql = "select  ?label 
+						{
+   							<".$uri."> rdfs:label ?label .
+							filter(langMatches(lang(?label),\"".$language."\"))
+						}
+				";
+
+
+	$result = sparql_query( $sparql ); 
+	#if( !$result ) { print sparql_errno() . ": " . sparql_error(). "\n"; exit; }
+	 
+	$fields = sparql_field_array( $result );
+	
+	$i = 0 ;
+	while( $row = sparql_fetch_array( $result ) )
+	{
+
+		foreach( $fields as $field )
+		{			
+				//echo $row[$field];
+				//echo "<br/>";
+				array_push($tab, $row[$field]);
+		}	
+		$i++;
+	}
+	return $tab[0];
+}
+
+function get_type_translation_name($uri , $language )
+{
+	$tab = array();
+	
+	$db = sparql_connect( "http://dbpedia.org/sparql" );
+	#if( !$db ) { print sparql_errno() . ": " . sparql_error(). "\n"; exit; }
+
+
+		$sparql = " select ?label WHERE 
+						{
+    					 <".$uri."> rdfs:label ?label. 
+    					 FILTER(lang(?label) = \"".$language."\")
+						}
+				";
+
+
+	$result = sparql_query( $sparql ); 
+	#if( !$result ) { print sparql_errno() . ": " . sparql_error(). "\n"; exit; }
+	 
+	$fields = sparql_field_array( $result );
+	
+	$i = 0 ;
+	while( $row = sparql_fetch_array( $result ) )
+	{
+
+		foreach( $fields as $field )
+		{			
+				//echo $row[$field];
+				//echo "<br/>";
+				array_push($tab, $row[$field]);
+		}	
+		$i++;
+	}
+
+	// si il existe aucune traduction on garde l'uri et on coupe à aprtir du dernier / 
+	if (!isset($tab[0])) 
+	{
+
+		return substr(strrchr($uri,"/"),1);
+	}
+	return $tab[0];
+}
+
 
 ?>
+
