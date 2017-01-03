@@ -26,22 +26,29 @@ function Search(){
     //filename = "flare.json"
     //filename = "test.json"
 
-
     // x = chemin vers le fichier json
-    var x = "json/" + document.getElementById("recherche").value;
+    var x = "json/" + document.getElementById("recherche").value.replace(" ","_");
     x += ".json";
 
-    //si le fichier existe on le choisit
-    if (fileExists(x) != false) 
-    {
+    
 
-        filename = x ;
-    }
-    else
+    //si le fichier existe pas
+    if (fileExists(x) == false) 
     {
-        //si le fichier existe pas on fait un appel en ajax pour le crée
-        filename = "json/Bretagne.json";
+        // appel en ajax pour le crée 
+       // filename = "json/Europe.json"; // solution temporaire
+
+       
+        $.ajax({
+          type: 'POST',
+          url:   '../main.php',
+          data: 'search=' + document.getElementById("recherche").value,
+          async:false
+        });
     }
+
+    filename = x;
+    
 
     
     historique = "name,relation,parent";
@@ -81,16 +88,27 @@ function ChargerCSV(){
 //fonction temporaire pour effectuer des tests
 function ChangeFile(){
 
-    var file = "json/" + elem + ".json";
-    filename = file;
+    var file = "json/" + elem.replace(" ","_") + ".json";
 
     //si le fichier existe pas
     if (fileExists(file) == false) 
     {
         // appel en ajax pour le crée 
-        filename = "json/Europe.json"; // solution temporaire
+       // filename = "json/Europe.json"; // solution temporaire
 
+     //  $("#loading").append("<p> recherche en cours  <img src=\"../picture/load.gif\" height=\"42\" width=\"42\" > </p> ");
+
+        $.ajax({
+          type: 'POST',
+          url:   '../main.php',
+          data: 'search=' + elem,
+          async:false
+        });
+
+      // $("#loading").remove();
     }
+
+    filename = file;
     
 }
 
