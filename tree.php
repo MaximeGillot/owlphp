@@ -124,30 +124,24 @@ class tree
 
 	// @last permemt de savoir si le fils en cours est le dernier consuler , pour afficher ou non une virgule , fixer à true par défautl
 	// @niveau est juste utiliser pour l'indentation , fixer à 0 de base
-	public function from_tree_2_json($last = true , $niveau = 0 )
+	// @filename : nom du fichier à crée
+	public function from_tree_2_json($last = true , $niveau = 0 , $filename )
 	{
-
-		/*
-		if(isset($filename)){
-			$file = fopen($GLOBALS['JSON_DIR'].$filename.'.json', 'a+');
-		}else{
-			$file = fopen('test.json', 'a+');
-		}*/
 
 		
 		$alphabet = array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
 		//$alphabet = array("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z");
 
-		$file = fopen('test.json', 'a+');
+		$file = fopen("javascript/json/".$filename.".json", 'a+');
 
 		$begin = "";
-		$begin .= add_tab($niveau) .  "{\n";
+		$begin .= add_tab($niveau) .  "{";
 
-		$begin .= add_tab($niveau) .  "\"name\" : \"".$this->filterType."\",\n";	
+		$begin .= add_tab($niveau) .  "\"name\" : \"".$this->filterType."\",";	
 
-		$begin .= add_tab($niveau) .  "\"description\" : \"\",\n";
-		$begin .= add_tab($niveau) .  "\"size\" : 3938,\n";
-		$begin .= add_tab($niveau) .  "\"children\" : [\n";
+		$begin .= add_tab($niveau) .  "\"description\" : \"\",";
+		$begin .= add_tab($niveau) .  "\"size\" : 3938,";
+		$begin .= add_tab($niveau) .  "\"children\" : [";
 		fputs($file,$begin);
 
 		
@@ -164,19 +158,19 @@ class tree
 					{
 						if ($lettreTrouver == False ) 
 						{
-							$insert .= add_tab($niveau) .  "{\n";
-							$insert .= add_tab($niveau) .  "\"name\" : \"".$lettre."\",\n";	
-							$insert .= add_tab($niveau) .  "\"description\" : \"\",\n";
-							$insert .= add_tab($niveau) .  "\"size\" : 3938,\n";
-							$insert .= add_tab($niveau) .  "\"children\" : [\n";
+							$insert .= "{\n";
+							$insert .= "\"name\" : \"".$lettre."\",";	
+							$insert .= "\"description\" : \"\",";
+							$insert .= "\"size\" : 3938,";
+							$insert .= "\"children\" : [";
 							$lettreTrouver = True ;
 						}
 
 						$insert.= "{\n";
-						$insert.= "\"name\" : \"".$value."\",\n";
-						$insert.= "\"description\" : \"\",\n";
-						$insert.= "\"size\" : 3938,\n";
-						$insert.= "\"children\" : []\n";
+						$insert.= "\"name\" : \"".$value."\",";
+						$insert.= "\"description\" : \"\",";
+						$insert.= "\"size\" : 3938,";
+						$insert.= "\"children\" : []";
 						$insert.= "},";
 					}
 				}
@@ -184,7 +178,7 @@ class tree
 				if ($lettreTrouver == true) 
 				{
 					$insert = substr($insert,0,strlen($insert)-1);
-					$insert .= add_tab($niveau) .  " ] \n";
+					$insert .= add_tab($niveau) .  " ] ";
 					$insert .= add_tab($niveau) .  " },";
 				}
 			}
@@ -195,10 +189,10 @@ class tree
 			foreach ($this->filterObject as  $value) 
 			{
 				$insert.= "{\n";
-				$insert.= "\"name\" : \"".$value."\",\n";
-				$insert.= "\"description\" : \"\",\n";
-				$insert.= "\"size\" : 3938,\n";
-				$insert.= "\"children\" : []\n";
+				$insert.= "\"name\" : \"".$value."\",";
+				$insert.= "\"description\" : \"\",";
+				$insert.= "\"size\" : 3938,";
+				$insert.= "\"children\" : []";
 				$insert.= "},";
 			}
 
@@ -217,23 +211,23 @@ class tree
 			if ($i == count($this->fils)-1) 
 			{
 
-				$this->fils[$i]->from_tree_2_json(true,$niveau+1);
+				$this->fils[$i]->from_tree_2_json(true,$niveau+1,$filename);
 			}
 			else
 			{
-				$this->fils[$i]->from_tree_2_json(false,$niveau+1);
+				$this->fils[$i]->from_tree_2_json(false,$niveau+1,$filename);
 
 			}
 		}
 
-		fputs($file,add_tab($niveau)."]\n");
+		fputs($file,add_tab($niveau)."]");
 		if ($last == false) 
 		{
-			fputs($file,add_tab($niveau)."},\n");
+			fputs($file,add_tab($niveau)."},");
 		}
 		else
 		{
-			fputs($file,add_tab($niveau)."}\n");
+			fputs($file,add_tab($niveau)."}");
 		}
 	}
 }

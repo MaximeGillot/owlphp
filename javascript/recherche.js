@@ -38,6 +38,8 @@ function Search(){
         // appel en ajax pour le crée 
        // filename = "json/Europe.json"; // solution temporaire
 
+        $("#loading").append("<p> recherche en cours  <img src=\"../picture/load.gif\" height=\"42\" width=\"42\" > </p> ");
+
        
         $.ajax({
           type: 'POST',
@@ -45,6 +47,8 @@ function Search(){
           data: 'search=' + document.getElementById("recherche").value,
           async:false
         });
+
+         $("#loading").remove();
     }
 
     filename = x;
@@ -96,7 +100,7 @@ function ChangeFile(){
         // appel en ajax pour le crée 
        // filename = "json/Europe.json"; // solution temporaire
 
-     //  $("#loading").append("<p> recherche en cours  <img src=\"../picture/load.gif\" height=\"42\" width=\"42\" > </p> ");
+      $("#loading").append("<p> recherche en cours  <img src=\"../picture/load.gif\" height=\"42\" width=\"42\" > </p> ");
 
         $.ajax({
           type: 'POST',
@@ -105,7 +109,7 @@ function ChangeFile(){
           async:false
         });
 
-      // $("#loading").remove();
+       $("#loading").remove();
     }
 
     filename = file;

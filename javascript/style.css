@@ -51,15 +51,15 @@
 }
 
 .tooltip { background-color: white;
-			  padding: 3px 5px;
-			  border: 1px solid black;
-			  text-align: center;}
-			  
+        padding: 3px 5px;
+        border: 1px solid black;
+        text-align: center;}
+        
 #tooltip { background-color: white;
-			  padding: 3px 5px;
-			  border: 1px solid black;
-			  text-align: center;}
-			  
+        padding: 3px 5px;
+        border: 1px solid black;
+        text-align: center;}
+        
 table{
   border-collapse: collapse;
   border: 2px solid;

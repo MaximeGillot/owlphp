@@ -3,7 +3,7 @@
 require_once("requetes.php");
 require_once("tree.php");
 
-$JS_DIR = "./javascript/";
+$JS_DIR = "./javascript/json/";
 
 /*
  * Function make_tree
@@ -17,13 +17,6 @@ $JS_DIR = "./javascript/";
  * @return void
  */
 function make_tree($subject){
-
-	if(file_exists($GLOBALS['JSON_DIR'].$subject.'.json')){
-		echo '<script src="'.$GLOBALS['JS_DIR'].'recherche.js" type="text/javascript" language="JavaScript"></script>', 
-			 '<script type="text/javascript">',
-		     'Search("'.$subject.'");',
-		     '</script>';
-	}else{
 
 		// Create tree
 		$tree = new tree ;
@@ -63,46 +56,22 @@ function make_tree($subject){
 
 		echo "<br/>";
 		$timestamp_debut = microtime(true);
-		$tree->from_tree_2_json(true,0); 
+		$tree->from_tree_2_json(true,0,$subject); 
 		$timestamp_fin = microtime(true); 
 		$time = $timestamp_fin - $timestamp_debut;
 		echo 'fonction tree 2 json : ' . $time . ' secondes.';
-	}
+	
 }
 
 
 
 
-if(isset($_GET['subject'])){
-	make_tree($_GET['subject']);
-}else{
-	make_tree("France");
+if(isset($_POST['search']))
+{
+	$search = $_POST['search'];
+	echo "recherche : $search";
+	make_tree(str_replace(" ","_", $search ));
 }
 
-/*TEST DE SUPPRESSION
-$t1 = array();
-$t2 = array();
 
-for ($i=0; $i < 10 ; $i++) { 
-	array_push($t1, $i);
-	array_push($t2, $i+1);
-}
-
-print_r($t1);
-print_r($t2);
-
-foreach ($t1 as $t1key => $t1value) {
-	foreach ($t2 as $t2key => $t2value) 
-	{
-		$search = array_search( $t1value ,$t2);
-		if ($search !== false) 
-		{
-			unset($t1[$t1key]);
-		}	
-	}
-}
-
-print_r($t1);
-print_r($t2);
-*/
 ?>
