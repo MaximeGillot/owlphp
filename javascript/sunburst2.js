@@ -160,6 +160,7 @@ function createVisualization2() {
       d3.select("#container").selectAll(".arcText").remove(); 
       d3.selectAll("#trail").remove(); 
       d3.select("#chart").selectAll("svg").remove(); 
+      d3.select("#chart").selectAll(".tooltip").remove(); 
       
     var width = 960,
         height = 700,
@@ -187,6 +188,18 @@ function createVisualization2() {
         .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
         .innerRadius(function(d) { return Math.max(0, y(d.y)); })
         .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
+        
+    var tooltip = d3.select("#chart").append("div")
+                    .attr("class", "tooltip")
+                    .attr("id", "infobulle")
+                    .style("position", "absolute")
+                    .style("z-index", "10")
+                    .style("opacity", 0);
+                    
+      function format_name(d) {
+        var name = d.name;
+        return  '<b>' + name + '</b>';
+    }
 
     d3.json(filename, function(error, root) {
       elem = root.name;
@@ -198,7 +211,22 @@ function createVisualization2() {
       var path = g.append("path")
         .attr("d", arc)
         .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
-        .on("click", click);
+        .on("click", click)
+        .on("mouseover", function(d) {
+          tooltip.html(function() {
+              var name = format_name(d);
+              return name;
+         });
+          return tooltip.transition()
+            .duration(50)
+            .style("opacity", 0.9);
+        })
+        .on("mousemove", function(d) {
+          return tooltip
+            .style("top", (d3.event.pageY-10)+"px")
+            .style("left", (d3.event.pageX+10)+"px");
+        })
+        .on("mouseout", function(){return tooltip.style("opacity", 0);});
 
       var text = g.append("text")
         .attr("transform", function(d) { return "rotate(" + computeTextRotation(d) + ")"; })
@@ -271,7 +299,7 @@ function createVisualization2() {
             ChangeFile();
           }
   
-       console.log(historique);
+       //console.log(historique);
         DisplayCSV();
         createVisualization2();
     }
