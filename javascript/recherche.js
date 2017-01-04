@@ -48,7 +48,7 @@ function Search(){
           async:false
         });
 
-         $("#loading").remove();
+         $("#loading").hide();
     }
 
     filename = x;
@@ -118,5 +118,5 @@ function ChangeFile(){
 
 //fonction temporaire pour effectuer des tests
 function ChargerFile(d){
-    filename = d.name + ".json";
+    filename = "json/" + d.name + ".json";
 }

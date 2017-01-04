@@ -1,0 +1,67 @@
+{"name" : "Langues_germaniques","description" : "","size" : 3938,"children" : [{
+"name" : "Witold Mańczak","description" : "","size" : 3938,"children" : []},{
+"name" : "Francique rhénan","description" : "","size" : 3938,"children" : []},{
+"name" : "Francique mosellan","description" : "","size" : 3938,"children" : []},	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "linguiste",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "August Schleicher","description" : "","size" : 3938,"children" : []},{
+"name" : "Rasmus Rask","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "écrivain",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Jacob Grimm","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "pays",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Allemagne","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "territoire",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "OldTerritory",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Empire romain","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		}	]	},	{	"name" : "langage",	"description" : "",	"size" : 3938,	"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Afrikaans","description" : "","size" : 3938,"children" : []},{
+"name" : "Allemand","description" : "","size" : 3938,"children" : []},{
+"name" : "Alsacien","description" : "","size" : 3938,"children" : []},{
+"name" : "Anglais","description" : "","size" : 3938,"children" : []},{
+"name" : "Alémanique","description" : "","size" : 3938,"children" : []},{
+"name" : "Anglo-frison","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "B","description" : "","size" : 3938,"children" : [{
+"name" : "Bas allemand","description" : "","size" : 3938,"children" : []},{
+"name" : "Bas saxon","description" : "","size" : 3938,"children" : []},{
+"name" : "Bavarois","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "D","description" : "","size" : 3938,"children" : [{
+"name" : "Dalécarlien","description" : "","size" : 3938,"children" : []},{
+"name" : "Danois","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Féroïen","description" : "","size" : 3938,"children" : []},{
+"name" : "Frison (langue)","description" : "","size" : 3938,"children" : []},{
+"name" : "Flamand occidental","description" : "","size" : 3938,"children" : []},{
+"name" : "Frison occidental","description" : "","size" : 3938,"children" : []},{
+"name" : "Frison oriental","description" : "","size" : 3938,"children" : []},{
+"name" : "Flamand oriental","description" : "","size" : 3938,"children" : []},{
+"name" : "Frison septentrional","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "G","description" : "","size" : 3938,"children" : [{
+"name" : "Gotique","description" : "","size" : 3938,"children" : []},{
+"name" : "Gutnisk","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "I","description" : "","size" : 3938,"children" : [{
+"name" : "Islandais","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "L","description" : "","size" : 3938,"children" : [{
+"name" : "Luxembourgeois","description" : "","size" : 3938,"children" : []},{
+"name" : "Langues germaniques occidentales","description" : "","size" : 3938,"children" : []},{
+"name" : "Langues scandinaves","description" : "","size" : 3938,"children" : []},{
+"name" : "Langues celtiques","description" : "","size" : 3938,"children" : []},{
+"name" : "Langues indo-européennes","description" : "","size" : 3938,"children" : []},{
+"name" : "Latin","description" : "","size" : 3938,"children" : []},{
+"name" : "Langues italiques","description" : "","size" : 3938,"children" : []},{
+"name" : "Limbourgeois","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "N","description" : "","size" : 3938,"children" : [{
+"name" : "Norvégien","description" : "","size" : 3938,"children" : []},{
+"name" : "Néerlandais","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "P","description" : "","size" : 3938,"children" : [{
+"name" : "Proto-norrois","description" : "","size" : 3938,"children" : []},{
+"name" : "Proto-slave","description" : "","size" : 3938,"children" : []},{
+"name" : "Proto-germanique","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "S","description" : "","size" : 3938,"children" : [{
+"name" : "Silésien (langue germanique)","description" : "","size" : 3938,"children" : []},{
+"name" : "Scots","description" : "","size" : 3938,"children" : []},{
+"name" : "Sanskrit","description" : "","size" : 3938,"children" : []},{
+"name" : "Suédois","description" : "","size" : 3938,"children" : []},{
+"name" : "Scots d'Ulster","description" : "","size" : 3938,"children" : []},{
+"name" : "Souabe (dialecte)","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "V","description" : "","size" : 3938,"children" : [{
+"name" : "Vieux saxon","description" : "","size" : 3938,"children" : []},{
+"name" : "Vieil anglais","description" : "","size" : 3938,"children" : []},{
+"name" : "Vieux norrois","description" : "","size" : 3938,"children" : []},{
+"name" : "Vieux haut-allemand","description" : "","size" : 3938,"children" : []},{
+"name" : "Vandale (langue)","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "Y","description" : "","size" : 3938,"children" : [{
+"name" : "Yiddish","description" : "","size" : 3938,"children" : []}	 ] 	 }	]	}]}

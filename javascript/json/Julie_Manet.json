@@ -1,0 +1,12 @@
+{"name" : "Julie_Manet","description" : "","size" : 3938,"children" : [	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "artiste",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Eugène Manet","description" : "","size" : 3938,"children" : []},				{				"name" : "peintre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Auguste Renoir","description" : "","size" : 3938,"children" : []},{
+"name" : "Édouard Manet","description" : "","size" : 3938,"children" : []},{
+"name" : "Berthe Morisot","description" : "","size" : 3938,"children" : []},{
+"name" : "Claude Monet","description" : "","size" : 3938,"children" : []},{
+"name" : "Edgar Degas","description" : "","size" : 3938,"children" : []},{
+"name" : "Alfred Sisley","description" : "","size" : 3938,"children" : []},{
+"name" : "Ernest Rouart","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "écrivain",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Jean-Marie Rouart","description" : "","size" : 3938,"children" : []},{
+"name" : "Paul Valéry","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "zone peuplée",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Paris","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	}]}

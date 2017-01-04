@@ -1,0 +1,31 @@
+{"name" : "Magnus_Maximus","description" : "","size" : 3938,"children" : [{
+"name" : "Vortigern","description" : "","size" : 3938,"children" : []},{
+"name" : "Coel Hen","description" : "","size" : 3938,"children" : []},{
+"name" : "Huns","description" : "","size" : 3938,"children" : []},{
+"name" : "Geoffroy de Monmouth","description" : "","size" : 3938,"children" : []},{
+"name" : "Léon Fleuriot","description" : "","size" : 3938,"children" : []},{
+"name" : "Historia regum Britanniae","description" : "","size" : 3938,"children" : []},{
+"name" : "Eudaf Hen","description" : "","size" : 3938,"children" : []},	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "RomanEmperor",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Gratien","description" : "","size" : 3938,"children" : []},{
+"name" : "Pétrone Maxime","description" : "","size" : 3938,"children" : []},{
+"name" : "Valentinien II","description" : "","size" : 3938,"children" : []},{
+"name" : "Théodose Ier","description" : "","size" : 3938,"children" : []},{
+"name" : "Valens","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "évènement",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "évènement collectif",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "conflit militaire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Bataille de Lutèce (383)","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "lieu naturel",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "étendue d'eau",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "ruisseau",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "rivière",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Save (Danube)","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			}		]		},		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "zone peuplée",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Rome","description" : "","size" : 3938,"children" : []},{
+"name" : "Saint-Valery-sur-Somme","description" : "","size" : 3938,"children" : []},{
+"name" : "Paris","description" : "","size" : 3938,"children" : []},{
+"name" : "Lyon","description" : "","size" : 3938,"children" : []},{
+"name" : "Milan","description" : "","size" : 3938,"children" : []},{
+"name" : "Trèves (Allemagne)","description" : "","size" : 3938,"children" : []},{
+"name" : "Aquilée","description" : "","size" : 3938,"children" : []},{
+"name" : "Pavie","description" : "","size" : 3938,"children" : []},				{				"name" : "ville",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Southampton","description" : "","size" : 3938,"children" : []},{
+"name" : "Caernarfon","description" : "","size" : 3938,"children" : []},{
+"name" : "Ptuj","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "territoire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Pays de Galles","description" : "","size" : 3938,"children" : []},				{				"name" : "OldTerritory",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Bretagne (province romaine)","description" : "","size" : 3938,"children" : []},{
+"name" : "Empire romain d'Occident","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		}	]	},	{	"name" : "langage",	"description" : "",	"size" : 3938,	"children" : [{
+"name" : "Breton","description" : "","size" : 3938,"children" : []},{
+"name" : "Gallois","description" : "","size" : 3938,"children" : []}	]	}]}

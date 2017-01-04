@@ -1,0 +1,21 @@
+{"name" : "Palais_des_festivals_de_Baden-Baden","description" : "","size" : 3938,"children" : [	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Christophe Colomb","description" : "","size" : 3938,"children" : []},			{			"name" : "artiste",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "musicien",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "ClassicalMusicArtist",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Herbert von Karajan","description" : "","size" : 3938,"children" : []},{
+"name" : "Kent Nagano","description" : "","size" : 3938,"children" : []},{
+"name" : "Marc Minkowski","description" : "","size" : 3938,"children" : []},{
+"name" : "Claudio Abbado","description" : "","size" : 3938,"children" : []},{
+"name" : "Giuseppe Verdi","description" : "","size" : 3938,"children" : []},{
+"name" : "Ludwig van Beethoven","description" : "","size" : 3938,"children" : []},{
+"name" : "Richard Wagner","description" : "","size" : 3938,"children" : []},{
+"name" : "Wolfgang Amadeus Mozart","description" : "","size" : 3938,"children" : []},{
+"name" : "Simone Young","description" : "","size" : 3938,"children" : []},{
+"name" : "Thomas Hengelbrock","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			}		]		}	]	},	{	"name" : "évènement",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "évènement collectif",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "festival de musique",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Festival international d'art lyrique d'Aix-en-Provence","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "œuvre",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "œuvre musicale",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "opéra",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Rigoletto","description" : "","size" : 3938,"children" : []},{
+"name" : "La Flûte enchantée","description" : "","size" : 3938,"children" : []},{
+"name" : "Fidelio","description" : "","size" : 3938,"children" : []},{
+"name" : "Parsifal","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "structure architecturale",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "Venue",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "théâtre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Théâtre Mariinsky","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		},		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "pays",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Allemagne","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "zone peuplée",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Baden-Baden","description" : "","size" : 3938,"children" : []},				{				"name" : "ville",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Saint-Pétersbourg","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		}	]	}]}

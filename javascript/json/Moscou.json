@@ -1,0 +1,107 @@
+{"name" : "Moscou","description" : "","size" : 3938,"children" : [{
+"name" : "Mongols","description" : "","size" : 3938,"children" : []},{
+"name" : "Tatars","description" : "","size" : 3938,"children" : []},{
+"name" : "Tatars de Crimée","description" : "","size" : 3938,"children" : []},{
+"name" : "Batu","description" : "","size" : 3938,"children" : []},{
+"name" : "Iouri Loujkov","description" : "","size" : 3938,"children" : []},{
+"name" : "Pierre Lorrain (journaliste)","description" : "","size" : 3938,"children" : []},{
+"name" : "Youri Nikouline","description" : "","size" : 3938,"children" : []},	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "organisation",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "établissement d'enseignement",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "université",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Université d'État des sciences humaines de Russie","description" : "","size" : 3938,"children" : []},{
+"name" : "Université d'État de Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "Institut d'État des relations internationales de Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "Institut minier de Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "Université technique d'État de Moscou-Bauman","description" : "","size" : 3938,"children" : []},{
+"name" : "Université russe de l'Amitié des Peuples","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "unité militaire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Wehrmacht","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "équipe sportive",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "club de football",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "FK Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "FK CSKA Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "FK Dynamo Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "FK Spartak Moscou","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		},		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Pavel Tretiakov","description" : "","size" : 3938,"children" : []},			{			"name" : "architecte",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Vladimir Tatline","description" : "","size" : 3938,"children" : []},{
+"name" : "Vladimir Choukhov","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "artiste",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "musicien",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "chanteur",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Alla Pougatcheva","description" : "","size" : 3938,"children" : []}					]					}				]				},				{				"name" : "peintre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Claude Monet","description" : "","size" : 3938,"children" : []},{
+"name" : "Paul Cézanne","description" : "","size" : 3938,"children" : []},{
+"name" : "Kasimir Malevitch","description" : "","size" : 3938,"children" : []},{
+"name" : "Andreï Roublev","description" : "","size" : 3938,"children" : []},{
+"name" : "Pablo Picasso","description" : "","size" : 3938,"children" : []},{
+"name" : "Ilia Répine","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "politicien",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Iouri Dolgorouki","description" : "","size" : 3938,"children" : []},{
+"name" : "Patrice Lumumba","description" : "","size" : 3938,"children" : []},{
+"name" : "Alexandre Nevski","description" : "","size" : 3938,"children" : []},{
+"name" : "Maurice Thorez","description" : "","size" : 3938,"children" : []},{
+"name" : "Mikhaïl Gorbatchev","description" : "","size" : 3938,"children" : []},				{				"name" : "maire",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Sergueï Sobianine","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "premier ministre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Joseph Staline","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "royauté",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Napoléon Ier","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "écrivain",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Maxime Gorki","description" : "","size" : 3938,"children" : []},{
+"name" : "Alexandre Pouchkine","description" : "","size" : 3938,"children" : []},{
+"name" : "Nicolas Gogol","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "évènement",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "évènement collectif",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "conflit militaire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Opération Barbarossa","description" : "","size" : 3938,"children" : []},{
+"name" : "Révolution russe","description" : "","size" : 3938,"children" : []},{
+"name" : "Révolution d'Octobre","description" : "","size" : 3938,"children" : []},{
+"name" : "Bataille de Moscou","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "évènement sportif",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "Jeux Olympiques",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Jeux olympiques d'été de 1980","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		}	]	},	{	"name" : "activité",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "sport",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Football","description" : "","size" : 3938,"children" : []},{
+"name" : "Basket-ball","description" : "","size" : 3938,"children" : []},{
+"name" : "Hockey sur glace","description" : "","size" : 3938,"children" : []},{
+"name" : "Nautisme (voile)","description" : "","size" : 3938,"children" : []},{
+"name" : "Volley-ball","description" : "","size" : 3938,"children" : []}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "structure architecturale",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "bâtiment",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "château",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Palais à Facettes","description" : "","size" : 3938,"children" : []},{
+"name" : "Palais de Tsaritsyno","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "musée",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Galerie Tretiakov","description" : "","size" : 3938,"children" : []},{
+"name" : "Musée des beaux-arts Pouchkine","description" : "","size" : 3938,"children" : []},{
+"name" : "British Museum","description" : "","size" : 3938,"children" : []},{
+"name" : "Musée historique d'État","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "édifice religieux",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Église Saint-Louis-des-Français de Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "Cathédrale de l'Annonciation de Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "Cathédrale de la Dormition de Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "Église de la Déposition-de-la-robe-de-la-Vierge","description" : "","size" : 3938,"children" : []},{
+"name" : "Monastère Danilov","description" : "","size" : 3938,"children" : []},{
+"name" : "Église des Douze Apôtres","description" : "","size" : 3938,"children" : []},					{					"name" : "église",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Cathédrale Saint-Basile-le-Bienheureux de Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "Cathédrale du Christ-Sauveur de Moscou","description" : "","size" : 3938,"children" : []}					]					}				]				},				{				"name" : "gratte-ciel",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Tour de Russie","description" : "","size" : 3938,"children" : []},{
+"name" : "Tour Ostankino","description" : "","size" : 3938,"children" : []},{
+"name" : "Complexe de la Fédération","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "infrastructure",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "aéroport",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Aéroport de Bykovo","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Moscou-Domodedovo","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport international de Vnoukovo","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "gare",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "gare",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Gare de Kiev","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			},			{			"name" : "installation sportive",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "stade",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Stade Lokomotiv (Moscou)","description" : "","size" : 3938,"children" : []},{
+"name" : "Stade Loujniki","description" : "","size" : 3938,"children" : []},{
+"name" : "Stade Dynamo (Moscou)","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "Venue",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "théâtre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Théâtre Maly","description" : "","size" : 3938,"children" : []},{
+"name" : "Théâtre Bolchoï","description" : "","size" : 3938,"children" : []},{
+"name" : "Théâtre d'art de Moscou","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		},		{		"name" : "monument",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Mausolée de Lénine","description" : "","size" : 3938,"children" : []},{
+"name" : "Clocher d'Ivan le Grand","description" : "","size" : 3938,"children" : []}		]		},		{		"name" : "lieu naturel",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "étendue d'eau",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "ruisseau",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "rivière",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Volga","description" : "","size" : 3938,"children" : []},{
+"name" : "Moskova","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			},			{			"name" : "montagne",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Caucase","description" : "","size" : 3938,"children" : []}			]			}		]		},		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "continent",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Europe","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "pays",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Lituanie","description" : "","size" : 3938,"children" : []},{
+"name" : "Pologne","description" : "","size" : 3938,"children" : []},{
+"name" : "Russie","description" : "","size" : 3938,"children" : []},{
+"name" : "Israël","description" : "","size" : 3938,"children" : []},{
+"name" : "Allemagne","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "zone peuplée",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Paris","description" : "","size" : 3938,"children" : []},				{				"name" : "ville",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Londres","description" : "","size" : 3938,"children" : []},{
+"name" : "New York","description" : "","size" : 3938,"children" : []},{
+"name" : "Saint-Pétersbourg","description" : "","size" : 3938,"children" : []},{
+"name" : "Tallinn","description" : "","size" : 3938,"children" : []},{
+"name" : "Vladimir (ville)","description" : "","size" : 3938,"children" : []},{
+"name" : "Tver","description" : "","size" : 3938,"children" : []},{
+"name" : "Souzdal","description" : "","size" : 3938,"children" : []},{
+"name" : "Khimki","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "territoire",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "OldTerritory",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Horde d'or","description" : "","size" : 3938,"children" : []},{
+"name" : "Empire russe","description" : "","size" : 3938,"children" : []},{
+"name" : "Empire ottoman","description" : "","size" : 3938,"children" : []},{
+"name" : "Union des républiques socialistes soviétiques","description" : "","size" : 3938,"children" : []},{
+"name" : "Rus' de Kiev","description" : "","size" : 3938,"children" : []},{
+"name" : "République socialiste fédérative soviétique de Russie","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		},		{		"name" : "site du patrimoine mondial",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Place Rouge","description" : "","size" : 3938,"children" : []},{
+"name" : "Kremlin de Moscou","description" : "","size" : 3938,"children" : []},{
+"name" : "Kolomenskoïe","description" : "","size" : 3938,"children" : []}		]		}	]	},	{	"name" : "langage",	"description" : "",	"size" : 3938,	"children" : [{
+"name" : "Russe","description" : "","size" : 3938,"children" : []}	]	}]}

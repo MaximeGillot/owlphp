@@ -1,0 +1,21 @@
+{"name" : "Emmanuel_Bondeville","description" : "","size" : 3938,"children" : [{
+"name" : "Viorica Cortez","description" : "","size" : 3938,"children" : []},{
+"name" : "Serge Nigg","description" : "","size" : 3938,"children" : []},	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "organisation",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "établissement d'enseignement",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "école",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Pensionnat Jean-Baptiste-de-La-Salle de Rouen","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "entreprise",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Radiodiffusion française","description" : "","size" : 3938,"children" : []}			]			}		]		},		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "artiste",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "musicien",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "ClassicalMusicArtist",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Marguerite Long","description" : "","size" : 3938,"children" : []},{
+"name" : "Maurice Ravel","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			},			{			"name" : "militaire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Charles Mangin","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "écrivain",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Molière","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "récompense",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "décoration",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Ordre des Arts et des Lettres","description" : "","size" : 3938,"children" : []},{
+"name" : "Ordre national du Mérite (France)","description" : "","size" : 3938,"children" : []},{
+"name" : "Croix de guerre 1914-1918 (France)","description" : "","size" : 3938,"children" : []},{
+"name" : "Ordre de Saint-Charles","description" : "","size" : 3938,"children" : []}		]		}	]	},	{	"name" : "œuvre",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "œuvre écrite",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "livre",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Madame Bovary","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "structure architecturale",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "Venue",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "théâtre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Théâtre national de l'Opéra-Comique","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		},		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "pays",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "France","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "région",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "région administrative",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "région administrative d'état",					"description" : "",					"size" : 3938,					"children" : [						{						"name" : "département",						"description" : "",						"size" : 3938,						"children" : [{
+"name" : "Seine-Maritime","description" : "","size" : 3938,"children" : []}						]						}					]					}				]				}			]			},			{			"name" : "zone peuplée",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Caen","description" : "","size" : 3938,"children" : []},{
+"name" : "Versailles","description" : "","size" : 3938,"children" : []},{
+"name" : "Le Grand-Quevilly","description" : "","size" : 3938,"children" : []},{
+"name" : "Rouen","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	}]}

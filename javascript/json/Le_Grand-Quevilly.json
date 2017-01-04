@@ -1,0 +1,80 @@
+{"name" : "Le_Grand-Quevilly","description" : "","size" : 3938,"children" : [{
+"name" : "Mory Kanté","description" : "","size" : 3938,"children" : []},{
+"name" : "Marquis","description" : "","size" : 3938,"children" : []},	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "organisation",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "groupe",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "groupe de musique",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Sinsemilia","description" : "","size" : 3938,"children" : []},{
+"name" : "Lilicub","description" : "","size" : 3938,"children" : []},{
+"name" : "Kassav","description" : "","size" : 3938,"children" : []},{
+"name" : "Zebda","description" : "","size" : 3938,"children" : []},{
+"name" : "Amadou et Mariam","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "parti politique",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Parti socialiste (France)","description" : "","size" : 3938,"children" : []},{
+"name" : "Parti communiste français","description" : "","size" : 3938,"children" : []},{
+"name" : "Section française de l'Internationale ouvrière","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "entreprise",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Gaz de France","description" : "","size" : 3938,"children" : []},{
+"name" : "Gaumont","description" : "","size" : 3938,"children" : []}			]			}		]		},		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Césaire Levillain","description" : "","size" : 3938,"children" : []},			{			"name" : "architecte",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Auguste Perret","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "artiste",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "musicien",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "chanteur",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Dany Brillant","description" : "","size" : 3938,"children" : []},{
+"name" : "Philippe Katerine","description" : "","size" : 3938,"children" : []},{
+"name" : "Hubert-Félix Thiéfaine","description" : "","size" : 3938,"children" : []},{
+"name" : "Sanseverino","description" : "","size" : 3938,"children" : []},{
+"name" : "Corneille (chanteur)","description" : "","size" : 3938,"children" : []},{
+"name" : "Gérald de Palmas","description" : "","size" : 3938,"children" : []},{
+"name" : "Michel Jonasz","description" : "","size" : 3938,"children" : []},{
+"name" : "Rokia Traoré","description" : "","size" : 3938,"children" : []},{
+"name" : "La Grande Sophie","description" : "","size" : 3938,"children" : []},{
+"name" : "Arno (chanteur)","description" : "","size" : 3938,"children" : []},{
+"name" : "Bernard Lavilliers","description" : "","size" : 3938,"children" : []},{
+"name" : "Maxime Le Forestier","description" : "","size" : 3938,"children" : []},{
+"name" : "Michel Delpech","description" : "","size" : 3938,"children" : []},{
+"name" : "Axel Bauer","description" : "","size" : 3938,"children" : []},{
+"name" : "Indra (chanteuse)","description" : "","size" : 3938,"children" : []},{
+"name" : "Cesária Évora","description" : "","size" : 3938,"children" : []}					]					}				]				},				{				"name" : "peintre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Jean-Marc Lange","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "acteur",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Franck Dubosc","description" : "","size" : 3938,"children" : []},{
+"name" : "Philippe Torreton","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "athlète",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "David Boulanger","description" : "","size" : 3938,"children" : []},{
+"name" : "Gérard Lelièvre","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "personnage de fiction",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Spider-Man","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "politicien",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "député",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Guillaume Bachelay","description" : "","size" : 3938,"children" : []},{
+"name" : "Anne Louis Christian de Montmorency","description" : "","size" : 3938,"children" : []},{
+"name" : "Tony Larue","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "maire",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Marc Massion","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "président",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "François Mitterrand","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "premier ministre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Laurent Fabius","description" : "","size" : 3938,"children" : []},{
+"name" : "Léon Blum","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "royauté",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Richard Cœur de Lion","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "écrivain",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Marc-Antoine Girard de Saint-Amant","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "évènement",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "évènement collectif",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "conflit militaire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Seconde Guerre mondiale","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "évènement sportif",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Championnat de France Pro A de tennis de table","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "œuvre",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "film",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Gran Torino","description" : "","size" : 3938,"children" : []},{
+"name" : "Invictus (film)","description" : "","size" : 3938,"children" : []},{
+"name" : "Les Invasions barbares","description" : "","size" : 3938,"children" : []},{
+"name" : "Titanic (film, 1997)","description" : "","size" : 3938,"children" : []},{
+"name" : "Matrix Reloaded","description" : "","size" : 3938,"children" : []},{
+"name" : "La Môme","description" : "","size" : 3938,"children" : []}		]		},		{		"name" : "œuvre écrite",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "livre",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Entre les murs","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "structure architecturale",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "Venue",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Zénith de Rouen","description" : "","size" : 3938,"children" : []}			]			}		]		},		{		"name" : "lieu naturel",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "étendue d'eau",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "ruisseau",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "rivière",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Seine","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			}		]		},		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "pays",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "France","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "Intercommunality",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Métropole Rouen Normandie","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "région",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "région administrative",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Région Normandie","description" : "","size" : 3938,"children" : []},					{					"name" : "région administrative d'état",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Canton du Grand-Quevilly","description" : "","size" : 3938,"children" : []},						{						"name" : "département",						"description" : "",						"size" : 3938,						"children" : [{
+"name" : "Seine-Maritime","description" : "","size" : 3938,"children" : []}						]						}					]					}				]				}			]			},			{			"name" : "zone peuplée",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Seignelay (Yonne)","description" : "","size" : 3938,"children" : []},{
+"name" : "Paris","description" : "","size" : 3938,"children" : []},{
+"name" : "Chevilly-Larue","description" : "","size" : 3938,"children" : []},{
+"name" : "Munich","description" : "","size" : 3938,"children" : []},{
+"name" : "Sotteville-lès-Rouen","description" : "","size" : 3938,"children" : []},{
+"name" : "Chevillé","description" : "","size" : 3938,"children" : []},{
+"name" : "Cavillon","description" : "","size" : 3938,"children" : []},{
+"name" : "Saint-Étienne-du-Rouvray","description" : "","size" : 3938,"children" : []},{
+"name" : "Canteleu","description" : "","size" : 3938,"children" : []},{
+"name" : "Grand-Couronne","description" : "","size" : 3938,"children" : []},{
+"name" : "Isneauville","description" : "","size" : 3938,"children" : []},{
+"name" : "Le Petit-Quevilly","description" : "","size" : 3938,"children" : []},{
+"name" : "Quevillon","description" : "","size" : 3938,"children" : []},{
+"name" : "Val-de-la-Haye","description" : "","size" : 3938,"children" : []},{
+"name" : "Neuilly-sur-Seine","description" : "","size" : 3938,"children" : []},{
+"name" : "Petit-Couronne","description" : "","size" : 3938,"children" : []},{
+"name" : "Rouen","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "territoire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Normandie","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	}]}

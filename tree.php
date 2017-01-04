@@ -147,7 +147,7 @@ class tree
 		
 		$insert = "";
 
-		if (count($this->filterObject) > 10) 
+		if (count($this->filterObject) > 20) 
 		{
 			foreach ( $alphabet as $lettre ) 
 			{

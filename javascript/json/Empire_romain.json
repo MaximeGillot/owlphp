@@ -1,0 +1,190 @@
+{"name" : "Empire_romain","description" : "","size" : 3938,"children" : [{
+"name" : "Campanie","description" : "","size" : 3938,"children" : []},{
+"name" : "Édit de Caracalla","description" : "","size" : 3938,"children" : []},{
+"name" : "Pierre Grimal","description" : "","size" : 3938,"children" : []},{
+"name" : "Yann Le Bohec","description" : "","size" : 3938,"children" : []},{
+"name" : "Duc","description" : "","size" : 3938,"children" : []},{
+"name" : "Premier concile de Nicée","description" : "","size" : 3938,"children" : []},{
+"name" : "Ammien Marcellin","description" : "","size" : 3938,"children" : []},{
+"name" : "Marcus Claudius Marcellus (neveu d'Auguste)","description" : "","size" : 3938,"children" : []},{
+"name" : "André Piganiol","description" : "","size" : 3938,"children" : []},{
+"name" : "Arnold Hugh Martin Jones","description" : "","size" : 3938,"children" : []},{
+"name" : "Ramsay MacMullen","description" : "","size" : 3938,"children" : []},{
+"name" : "Britannicus","description" : "","size" : 3938,"children" : []},	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "organisation",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "unité militaire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Légion romaine","description" : "","size" : 3938,"children" : []}			]			}		]		},		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Agrippine la Jeune","description" : "","size" : 3938,"children" : []},			{			"name" : "aristocrate",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Germanicus","description" : "","size" : 3938,"children" : []},{
+"name" : "Séjan","description" : "","size" : 3938,"children" : []},{
+"name" : "Marcus Vipsanius Agrippa","description" : "","size" : 3938,"children" : []},{
+"name" : "Crassus","description" : "","size" : 3938,"children" : []},{
+"name" : "Jules César","description" : "","size" : 3938,"children" : []},{
+"name" : "Marc Antoine","description" : "","size" : 3938,"children" : []},{
+"name" : "Stilicon","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "militaire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Décébale","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "philosophe",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Sénèque","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "politicien",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Odoacre","description" : "","size" : 3938,"children" : []},{
+"name" : "Julia Maesa","description" : "","size" : 3938,"children" : []},{
+"name" : "Fausta","description" : "","size" : 3938,"children" : []},{
+"name" : "Théodora (femme de Constance Chlore)","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "RomanEmperor",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Antonin le Pieux","description" : "","size" : 3938,"children" : []},{
+"name" : "Aurélien (empereur romain)","description" : "","size" : 3938,"children" : []},{
+"name" : "Anthémius","description" : "","size" : 3938,"children" : []},{
+"name" : "Auguste","description" : "","size" : 3938,"children" : []},{
+"name" : "Allectus","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "B","description" : "","size" : 3938,"children" : [{
+"name" : "Balbin","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "C","description" : "","size" : 3938,"children" : [{
+"name" : "Constance III","description" : "","size" : 3938,"children" : []},{
+"name" : "Carin","description" : "","size" : 3938,"children" : []},{
+"name" : "Carus","description" : "","size" : 3938,"children" : []},{
+"name" : "Constance Chlore","description" : "","size" : 3938,"children" : []},{
+"name" : "Constant Ier","description" : "","size" : 3938,"children" : []},{
+"name" : "Constantin II (empereur romain)","description" : "","size" : 3938,"children" : []},{
+"name" : "Carausius","description" : "","size" : 3938,"children" : []},{
+"name" : "Caligula","description" : "","size" : 3938,"children" : []},{
+"name" : "Claude (empereur romain)","description" : "","size" : 3938,"children" : []},{
+"name" : "Claude II le Gothique","description" : "","size" : 3938,"children" : []},{
+"name" : "Commode (empereur)","description" : "","size" : 3938,"children" : []},{
+"name" : "Constance II","description" : "","size" : 3938,"children" : []},{
+"name" : "Constantin Ier (empereur romain)","description" : "","size" : 3938,"children" : []},{
+"name" : "Clodius Albinus","description" : "","size" : 3938,"children" : []},{
+"name" : "Constantin XI Paléologue","description" : "","size" : 3938,"children" : []},{
+"name" : "Caracalla","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "D","description" : "","size" : 3938,"children" : [{
+"name" : "Didius Julianus","description" : "","size" : 3938,"children" : []},{
+"name" : "Domitien","description" : "","size" : 3938,"children" : []},{
+"name" : "Dèce","description" : "","size" : 3938,"children" : []},{
+"name" : "Domitius Alexander","description" : "","size" : 3938,"children" : []},{
+"name" : "Dioclétien","description" : "","size" : 3938,"children" : []},{
+"name" : "Diaduménien","description" : "","size" : 3938,"children" : []},{
+"name" : "Domitius Domitianus","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "E","description" : "","size" : 3938,"children" : [{
+"name" : "Eparchus Avitus","description" : "","size" : 3938,"children" : []},{
+"name" : "Eugène (usurpateur romain)","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Florien","description" : "","size" : 3938,"children" : []},{
+"name" : "Flavius Arcadius","description" : "","size" : 3938,"children" : []},{
+"name" : "Flavius Honorius","description" : "","size" : 3938,"children" : []},{
+"name" : "Flavius Dalmatius (César)","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "G","description" : "","size" : 3938,"children" : [{
+"name" : "Gratien","description" : "","size" : 3938,"children" : []},{
+"name" : "Gallien","description" : "","size" : 3938,"children" : []},{
+"name" : "Galère (empereur romain)","description" : "","size" : 3938,"children" : []},{
+"name" : "Gordien II","description" : "","size" : 3938,"children" : []},{
+"name" : "Gordien III","description" : "","size" : 3938,"children" : []},{
+"name" : "Gordien Ier","description" : "","size" : 3938,"children" : []},{
+"name" : "Galba","description" : "","size" : 3938,"children" : []},{
+"name" : "Glycérius","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "H","description" : "","size" : 3938,"children" : [{
+"name" : "Héliogabale","description" : "","size" : 3938,"children" : []},{
+"name" : "Hadrien","description" : "","size" : 3938,"children" : []},{
+"name" : "Herennius Etruscus","description" : "","size" : 3938,"children" : []},{
+"name" : "Hostilien","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "J","description" : "","size" : 3938,"children" : [{
+"name" : "Julien (empereur romain)","description" : "","size" : 3938,"children" : []},{
+"name" : "Jovien","description" : "","size" : 3938,"children" : []},{
+"name" : "Julius Nepos","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "L","description" : "","size" : 3938,"children" : [{
+"name" : "Licinius","description" : "","size" : 3938,"children" : []},{
+"name" : "Libius Severus","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "M","description" : "","size" : 3938,"children" : [{
+"name" : "Macrin","description" : "","size" : 3938,"children" : []},{
+"name" : "Marcus Claudius Tacite","description" : "","size" : 3938,"children" : []},{
+"name" : "Maxence (empereur romain)","description" : "","size" : 3938,"children" : []},{
+"name" : "Maxime Pupien","description" : "","size" : 3938,"children" : []},{
+"name" : "Maximien Hercule","description" : "","size" : 3938,"children" : []},{
+"name" : "Maximin II Daïa","description" : "","size" : 3938,"children" : []},{
+"name" : "Maximin Ier le Thrace","description" : "","size" : 3938,"children" : []},{
+"name" : "Majorien","description" : "","size" : 3938,"children" : []},{
+"name" : "Magnus Maximus","description" : "","size" : 3938,"children" : []},{
+"name" : "Marc Aurèle","description" : "","size" : 3938,"children" : []},{
+"name" : "Macrien","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "N","description" : "","size" : 3938,"children" : [{
+"name" : "Nerva","description" : "","size" : 3938,"children" : []},{
+"name" : "Numérien","description" : "","size" : 3938,"children" : []},{
+"name" : "Néron","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "O","description" : "","size" : 3938,"children" : [{
+"name" : "Othon (empereur romain)","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "P","description" : "","size" : 3938,"children" : [{
+"name" : "Pétrone Maxime","description" : "","size" : 3938,"children" : []},{
+"name" : "Pertinax","description" : "","size" : 3938,"children" : []},{
+"name" : "Philippe l'Arabe","description" : "","size" : 3938,"children" : []},{
+"name" : "Probus (empereur)","description" : "","size" : 3938,"children" : []},{
+"name" : "Publius Septimius Geta","description" : "","size" : 3938,"children" : []},{
+"name" : "Postume","description" : "","size" : 3938,"children" : []},{
+"name" : "Philippe II (empereur romain)","description" : "","size" : 3938,"children" : []},{
+"name" : "Procope (usurpateur)","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "Q","description" : "","size" : 3938,"children" : [{
+"name" : "Quintillus","description" : "","size" : 3938,"children" : []},{
+"name" : "Quiétus","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "R","description" : "","size" : 3938,"children" : [{
+"name" : "Romulus Augustule","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "S","description" : "","size" : 3938,"children" : [{
+"name" : "Septimia Bathzabbai Zénobie","description" : "","size" : 3938,"children" : []},{
+"name" : "Septime Sévère","description" : "","size" : 3938,"children" : []},{
+"name" : "Sévère","description" : "","size" : 3938,"children" : []},{
+"name" : "Sévère Alexandre","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "T","description" : "","size" : 3938,"children" : [{
+"name" : "Titus (empereur romain)","description" : "","size" : 3938,"children" : []},{
+"name" : "Trébonien Galle","description" : "","size" : 3938,"children" : []},{
+"name" : "Théodose Ier","description" : "","size" : 3938,"children" : []},{
+"name" : "Tibère","description" : "","size" : 3938,"children" : []},{
+"name" : "Trajan","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "V","description" : "","size" : 3938,"children" : [{
+"name" : "Valentinien II","description" : "","size" : 3938,"children" : []},{
+"name" : "Valentinien III","description" : "","size" : 3938,"children" : []},{
+"name" : "Valentinien Ier","description" : "","size" : 3938,"children" : []},{
+"name" : "Valérien","description" : "","size" : 3938,"children" : []},{
+"name" : "Valens","description" : "","size" : 3938,"children" : []},{
+"name" : "Vespasien","description" : "","size" : 3938,"children" : []},{
+"name" : "Vitellius","description" : "","size" : 3938,"children" : []},{
+"name" : "Volusien","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "Z","description" : "","size" : 3938,"children" : [{
+"name" : "Zénon (empereur byzantin)","description" : "","size" : 3938,"children" : []}			 ] 			 }			]			},			{			"name" : "royauté",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Shapur Ier","description" : "","size" : 3938,"children" : []},{
+"name" : "Phraatès IV","description" : "","size" : 3938,"children" : []},{
+"name" : "Narseh","description" : "","size" : 3938,"children" : []},{
+"name" : "Attila","description" : "","size" : 3938,"children" : []},{
+"name" : "Tiridate IV d'Arménie","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "écrivain",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Theodor Mommsen","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "évènement",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "évènement collectif",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "conflit militaire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Bataille de Ctésiphon (363)","description" : "","size" : 3938,"children" : []},{
+"name" : "Dernière Guerre civile de la République romaine","description" : "","size" : 3938,"children" : []},{
+"name" : "Bataille d'Actium","description" : "","size" : 3938,"children" : []},{
+"name" : "Bataille d'Andrinople (378)","description" : "","size" : 3938,"children" : []},{
+"name" : "Bataille d'Argentoratum","description" : "","size" : 3938,"children" : []},{
+"name" : "Bataille du pont Milvius","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "évènement sportif",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "Jeux Olympiques",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "OlympicEvent",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Jeux olympiques","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "lieu naturel",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "étendue d'eau",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "ruisseau",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "rivière",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Tigre (fleuve)","description" : "","size" : 3938,"children" : []},{
+"name" : "Elbe (fleuve)","description" : "","size" : 3938,"children" : []},{
+"name" : "Morava (Serbie)","description" : "","size" : 3938,"children" : []},{
+"name" : "Danube","description" : "","size" : 3938,"children" : []},{
+"name" : "Rhin","description" : "","size" : 3938,"children" : []},{
+"name" : "Araxe","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			},			{			"name" : "montagne",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Alpes","description" : "","size" : 3938,"children" : []}			]			}		]		},		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "continent",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Afrique","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "pays",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Maroc","description" : "","size" : 3938,"children" : []},{
+"name" : "Arménie","description" : "","size" : 3938,"children" : []},{
+"name" : "Italie","description" : "","size" : 3938,"children" : []},{
+"name" : "Mauritanie","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "zone peuplée",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Rome","description" : "","size" : 3938,"children" : []},{
+"name" : "Marseille","description" : "","size" : 3938,"children" : []},{
+"name" : "Milan","description" : "","size" : 3938,"children" : []},{
+"name" : "Ravenne","description" : "","size" : 3938,"children" : []},{
+"name" : "Trèves (Allemagne)","description" : "","size" : 3938,"children" : []},{
+"name" : "Aquilée","description" : "","size" : 3938,"children" : []},				{				"name" : "ville",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Sisak","description" : "","size" : 3938,"children" : []},{
+"name" : "York","description" : "","size" : 3938,"children" : []},{
+"name" : "Sremska Mitrovica","description" : "","size" : 3938,"children" : []},{
+"name" : "Vinkovci","description" : "","size" : 3938,"children" : []},{
+"name" : "Nusaybin","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "territoire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Angleterre","description" : "","size" : 3938,"children" : []},				{				"name" : "OldTerritory",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Empire des Gaules","description" : "","size" : 3938,"children" : []},{
+"name" : "Sassanides","description" : "","size" : 3938,"children" : []},{
+"name" : "Gaule romaine","description" : "","size" : 3938,"children" : []},{
+"name" : "Bretagne (province romaine)","description" : "","size" : 3938,"children" : []},{
+"name" : "Empire romain d'Occident","description" : "","size" : 3938,"children" : []},{
+"name" : "Empire byzantin","description" : "","size" : 3938,"children" : []},{
+"name" : "République romaine","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		}	]	},	{	"name" : "langage",	"description" : "",	"size" : 3938,	"children" : [{
+"name" : "Grec ancien","description" : "","size" : 3938,"children" : []},{
+"name" : "Latin","description" : "","size" : 3938,"children" : []}	]	}]}

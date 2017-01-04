@@ -233,7 +233,8 @@ function createVisualization2() {
         .attr("x", function(d) { return y(d.y); })
         .attr("dx", "6") // margin
         .attr("dy", ".35em") // vertical-align
-        .text(function(d) { return d.name; });
+        .text(function(d) { return d.name; })
+        .on("click",click);
 
 
 

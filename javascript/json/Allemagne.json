@@ -1,0 +1,544 @@
+{"name" : "Allemagne","description" : "","size" : 3938,"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Alsace","description" : "","size" : 3938,"children" : []},{
+"name" : "Alfred Grosser","description" : "","size" : 3938,"children" : []} ]  },{
+"name" : "B","description" : "","size" : 3938,"children" : [{
+"name" : "Bavière","description" : "","size" : 3938,"children" : []},{
+"name" : "Berlin","description" : "","size" : 3938,"children" : []} ]  },{
+"name" : "D","description" : "","size" : 3938,"children" : [{
+"name" : "Deutsche Mark","description" : "","size" : 3938,"children" : []},{
+"name" : "Dieter Rams","description" : "","size" : 3938,"children" : []} ]  },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Francis Rapp","description" : "","size" : 3938,"children" : []},{
+"name" : "Francique rhénan","description" : "","size" : 3938,"children" : []},{
+"name" : "Francique mosellan","description" : "","size" : 3938,"children" : []} ]  },{
+"name" : "G","description" : "","size" : 3938,"children" : [{
+"name" : "Gerd Faltings","description" : "","size" : 3938,"children" : []} ]  },{
+"name" : "H","description" : "","size" : 3938,"children" : [{
+"name" : "Habsbourg","description" : "","size" : 3938,"children" : []},{
+"name" : "Hugo Junkers","description" : "","size" : 3938,"children" : []} ]  },{
+"name" : "I","description" : "","size" : 3938,"children" : [{
+"name" : "Ireen Sheer","description" : "","size" : 3938,"children" : []} ]  },{
+"name" : "O","description" : "","size" : 3938,"children" : [{
+"name" : "Otto Lilienthal","description" : "","size" : 3938,"children" : []},{
+"name" : "Orchestre symphonique de la WDR de Cologne","description" : "","size" : 3938,"children" : []} ]  },{
+"name" : "S","description" : "","size" : 3938,"children" : [{
+"name" : "Saxe (Land)","description" : "","size" : 3938,"children" : []} ]  },{
+"name" : "T","description" : "","size" : 3938,"children" : [{
+"name" : "Traité de Verdun","description" : "","size" : 3938,"children" : []},{
+"name" : "Traité de l'Élysée","description" : "","size" : 3938,"children" : []} ]  },{
+"name" : "W","description" : "","size" : 3938,"children" : [{
+"name" : "Wernher von Braun","description" : "","size" : 3938,"children" : []} ]  },	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "organisation",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Communauté européenne du charbon et de l'acier","description" : "","size" : 3938,"children" : []},{
+"name" : "Tribunal international du droit de la mer","description" : "","size" : 3938,"children" : []},{
+"name" : "Catholicisme","description" : "","size" : 3938,"children" : []},{
+"name" : "Communauté économique européenne","description" : "","size" : 3938,"children" : []},{
+"name" : "Office européen des brevets","description" : "","size" : 3938,"children" : []},{
+"name" : "Protestantisme","description" : "","size" : 3938,"children" : []},{
+"name" : "Société des Nations","description" : "","size" : 3938,"children" : []},{
+"name" : "Ministère fédéral des Finances (Allemagne)","description" : "","size" : 3938,"children" : []},{
+"name" : "Banque centrale européenne","description" : "","size" : 3938,"children" : []},{
+"name" : "Organisation du traité de l'Atlantique nord","description" : "","size" : 3938,"children" : []},			{			"name" : "groupe",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "groupe de musique",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Tokio Hotel","description" : "","size" : 3938,"children" : []},{
+"name" : "Münchener Freiheit","description" : "","size" : 3938,"children" : []},{
+"name" : "Rammstein","description" : "","size" : 3938,"children" : []},{
+"name" : "Scorpions","description" : "","size" : 3938,"children" : []},{
+"name" : "Dschinghis Khan","description" : "","size" : 3938,"children" : []},{
+"name" : "Modern Talking","description" : "","size" : 3938,"children" : []},{
+"name" : "Scooter (groupe)","description" : "","size" : 3938,"children" : []},{
+"name" : "Alphaville (groupe allemand)","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "parti politique",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Parti libéral-démocrate (Allemagne)","description" : "","size" : 3938,"children" : []},{
+"name" : "Union chrétienne-sociale en Bavière","description" : "","size" : 3938,"children" : []},{
+"name" : "Parti socialiste unifié d'Allemagne","description" : "","size" : 3938,"children" : []},{
+"name" : "Alliance 90 / Les Verts","description" : "","size" : 3938,"children" : []},{
+"name" : "Parti social-démocrate d'Allemagne","description" : "","size" : 3938,"children" : []},{
+"name" : "Union chrétienne-démocrate d'Allemagne","description" : "","size" : 3938,"children" : []},{
+"name" : "Parti national-socialiste des travailleurs allemands","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "entreprise",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Audi","description" : "","size" : 3938,"children" : []},{
+"name" : "Adidas","description" : "","size" : 3938,"children" : []},{
+"name" : "Allianz","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "B","description" : "","size" : 3938,"children" : [{
+"name" : "Bayer (entreprise)","description" : "","size" : 3938,"children" : []},{
+"name" : "Bayerische Motoren Werke","description" : "","size" : 3938,"children" : []},{
+"name" : "Braun GmbH","description" : "","size" : 3938,"children" : []},{
+"name" : "British Broadcasting Corporation","description" : "","size" : 3938,"children" : []},{
+"name" : "BASF","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "D","description" : "","size" : 3938,"children" : [{
+"name" : "Daimler (entreprise)","description" : "","size" : 3938,"children" : []},{
+"name" : "DHL","description" : "","size" : 3938,"children" : []},{
+"name" : "Deutsche Bank","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "E","description" : "","size" : 3938,"children" : [{
+"name" : "Esprit Holdings","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Fitch Ratings","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "G","description" : "","size" : 3938,"children" : [{
+"name" : "General Motors","description" : "","size" : 3938,"children" : []},{
+"name" : "GfK","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "H","description" : "","size" : 3938,"children" : [{
+"name" : "Hugo Boss","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "L","description" : "","size" : 3938,"children" : [{
+"name" : "Lidl","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "M","description" : "","size" : 3938,"children" : [{
+"name" : "Moody's","description" : "","size" : 3938,"children" : []},{
+"name" : "Munich Re","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "O","description" : "","size" : 3938,"children" : [{
+"name" : "Opel","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "P","description" : "","size" : 3938,"children" : [{
+"name" : "Porsche","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "S","description" : "","size" : 3938,"children" : [{
+"name" : "Standard & Poor's","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "T","description" : "","size" : 3938,"children" : [{
+"name" : "ThyssenKrupp","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "V","description" : "","size" : 3938,"children" : [{
+"name" : "Volkswagen","description" : "","size" : 3938,"children" : []},{
+"name" : "Volkswagen (entreprise)","description" : "","size" : 3938,"children" : []}			 ] 			 },				{				"name" : "compagnie aérienne",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Lufthansa","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		},		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Carl Benz","description" : "","size" : 3938,"children" : []},{
+"name" : "Gottlieb Daimler","description" : "","size" : 3938,"children" : []},{
+"name" : "Rudolf Diesel","description" : "","size" : 3938,"children" : []},{
+"name" : "Theodor W. Adorno","description" : "","size" : 3938,"children" : []},{
+"name" : "Alexander von Humboldt","description" : "","size" : 3938,"children" : []},{
+"name" : "Johannes Gutenberg","description" : "","size" : 3938,"children" : []},{
+"name" : "Karl Lagerfeld","description" : "","size" : 3938,"children" : []},{
+"name" : "Philipp Plein","description" : "","size" : 3938,"children" : []},{
+"name" : "Max Horkheimer","description" : "","size" : 3938,"children" : []},{
+"name" : "Georg Wenzeslaus von Knobelsdorff","description" : "","size" : 3938,"children" : []},			{			"name" : "artiste",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "musicien",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "ClassicalMusicArtist",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "C","description" : "","size" : 3938,"children" : [{
+"name" : "Carl Maria von Weber","description" : "","size" : 3938,"children" : []},{
+"name" : "Christoph Willibald Gluck","description" : "","size" : 3938,"children" : []},{
+"name" : "Carl Philipp Emanuel Bach","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "E","description" : "","size" : 3938,"children" : [{
+"name" : "Edvard Grieg","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Felix Mendelssohn","description" : "","size" : 3938,"children" : []},{
+"name" : "Felix Weingartner","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "G","description" : "","size" : 3938,"children" : [{
+"name" : "Georg Philipp Telemann","description" : "","size" : 3938,"children" : []},{
+"name" : "Gustav Mahler","description" : "","size" : 3938,"children" : []},{
+"name" : "Georg Friedrich Haendel","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "H","description" : "","size" : 3938,"children" : [{
+"name" : "Heinrich Schütz","description" : "","size" : 3938,"children" : []},{
+"name" : "Hans Richter (chef d'orchestre)","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "J","description" : "","size" : 3938,"children" : [{
+"name" : "Johann Joachim Quantz","description" : "","size" : 3938,"children" : []},{
+"name" : "Johann Jakob Froberger","description" : "","size" : 3938,"children" : []},{
+"name" : "Johann Pachelbel","description" : "","size" : 3938,"children" : []},{
+"name" : "Johann Sebastian Bach","description" : "","size" : 3938,"children" : []},{
+"name" : "Johannes Brahms","description" : "","size" : 3938,"children" : []},{
+"name" : "Johann Christian Bach","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "K","description" : "","size" : 3938,"children" : [{
+"name" : "Karl Friedrich Abel","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "L","description" : "","size" : 3938,"children" : [{
+"name" : "Ludwig van Beethoven","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "M","description" : "","size" : 3938,"children" : [{
+"name" : "Max Reger","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "R","description" : "","size" : 3938,"children" : [{
+"name" : "Richard Strauss","description" : "","size" : 3938,"children" : []},{
+"name" : "Robert Schumann","description" : "","size" : 3938,"children" : []},{
+"name" : "Richard Wagner","description" : "","size" : 3938,"children" : []}					 ] 					 }					]					},					{					"name" : "chanteur",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Nena","description" : "","size" : 3938,"children" : []}					]					}				]				},				{				"name" : "acteur",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Diane Kruger","description" : "","size" : 3938,"children" : []},{
+"name" : "Claudia Schiffer","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "ecclésiastique",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "pape",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Benoît XVI","description" : "","size" : 3938,"children" : []},{
+"name" : "Léon X","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "mannequin",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Heidi Klum","description" : "","size" : 3938,"children" : []},{
+"name" : "Toni Garrn","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "philosophe",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Arthur Schopenhauer","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "C","description" : "","size" : 3938,"children" : [{
+"name" : "Christian Wolff (philosophe)","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "E","description" : "","size" : 3938,"children" : [{
+"name" : "Edmund Husserl","description" : "","size" : 3938,"children" : []},{
+"name" : "Emmanuel Kant","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Friedrich Engels","description" : "","size" : 3938,"children" : []},{
+"name" : "Friedrich Wilhelm Joseph von Schelling","description" : "","size" : 3938,"children" : []},{
+"name" : "Friedrich Nietzsche","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "G","description" : "","size" : 3938,"children" : [{
+"name" : "Georg Wilhelm Friedrich Hegel","description" : "","size" : 3938,"children" : []},{
+"name" : "Gottfried Wilhelm Leibniz","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "H","description" : "","size" : 3938,"children" : [{
+"name" : "Hannah Arendt","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "J","description" : "","size" : 3938,"children" : [{
+"name" : "Johann Gottlieb Fichte","description" : "","size" : 3938,"children" : []},{
+"name" : "Jürgen Habermas","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "K","description" : "","size" : 3938,"children" : [{
+"name" : "Karl Jaspers","description" : "","size" : 3938,"children" : []},{
+"name" : "Karl Marx","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "M","description" : "","size" : 3938,"children" : [{
+"name" : "Martin Heidegger","description" : "","size" : 3938,"children" : []}			 ] 			 }			]			},			{			"name" : "politicien",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Otton Ier du Saint-Empire","description" : "","size" : 3938,"children" : []},{
+"name" : "Ursula von der Leyen","description" : "","size" : 3938,"children" : []},{
+"name" : "Wolfgang Schäuble","description" : "","size" : 3938,"children" : []},{
+"name" : "Angela Merkel","description" : "","size" : 3938,"children" : []},{
+"name" : "Adolf Hitler","description" : "","size" : 3938,"children" : []},				{				"name" : "chancelier",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Konrad Adenauer","description" : "","size" : 3938,"children" : []},{
+"name" : "Otto von Bismarck","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "président",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Joachim Gauck","description" : "","size" : 3938,"children" : []},{
+"name" : "Gerhard Schröder","description" : "","size" : 3938,"children" : []},{
+"name" : "Charles de Gaulle","description" : "","size" : 3938,"children" : []},{
+"name" : "Norbert Lammert","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "premier ministre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Stanislaw Tillich","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "royauté",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Louis II de Germanie","description" : "","size" : 3938,"children" : []},{
+"name" : "Charles Quint","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "scientifique",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Albert Einstein","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "C","description" : "","size" : 3938,"children" : [{
+"name" : "Carl Friedrich Gauss","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "D","description" : "","size" : 3938,"children" : [{
+"name" : "David Hilbert","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Felix Klein","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "G","description" : "","size" : 3938,"children" : [{
+"name" : "Georg Cantor","description" : "","size" : 3938,"children" : []},{
+"name" : "Gabriel Fahrenheit","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "H","description" : "","size" : 3938,"children" : [{
+"name" : "Heinrich Rudolf Hertz","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "K","description" : "","size" : 3938,"children" : [{
+"name" : "Konrad Zuse","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "M","description" : "","size" : 3938,"children" : [{
+"name" : "Max Talmey","description" : "","size" : 3938,"children" : []},{
+"name" : "Max Planck","description" : "","size" : 3938,"children" : []},{
+"name" : "Max von Laue","description" : "","size" : 3938,"children" : []},{
+"name" : "Manfred von Ardenne","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "O","description" : "","size" : 3938,"children" : [{
+"name" : "Otto Hahn","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "R","description" : "","size" : 3938,"children" : [{
+"name" : "Robert Koch","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "W","description" : "","size" : 3938,"children" : [{
+"name" : "Walther Nernst","description" : "","size" : 3938,"children" : []},{
+"name" : "Wilhelm Röntgen","description" : "","size" : 3938,"children" : []}			 ] 			 }			]			},			{			"name" : "écrivain",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Auguste Schlegel","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "E","description" : "","size" : 3938,"children" : [{
+"name" : "Ernst Theodor Amadeus Hoffmann","description" : "","size" : 3938,"children" : []},{
+"name" : "Erich Kästner","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Friedrich Hölderlin","description" : "","size" : 3938,"children" : []},{
+"name" : "Friedrich von Schiller","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "G","description" : "","size" : 3938,"children" : [{
+"name" : "Günter Grass","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "H","description" : "","size" : 3938,"children" : [{
+"name" : "Heinrich Böll","description" : "","size" : 3938,"children" : []},{
+"name" : "Herta Müller","description" : "","size" : 3938,"children" : []},{
+"name" : "Hermann Hesse","description" : "","size" : 3938,"children" : []},{
+"name" : "Heinrich Heine","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "J","description" : "","size" : 3938,"children" : [{
+"name" : "Johann Wolfgang von Goethe","description" : "","size" : 3938,"children" : []},{
+"name" : "Jean Paul","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "M","description" : "","size" : 3938,"children" : [{
+"name" : "Martin Luther","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "N","description" : "","size" : 3938,"children" : [{
+"name" : "Novalis","description" : "","size" : 3938,"children" : []},{
+"name" : "Nelly Sachs","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "T","description" : "","size" : 3938,"children" : [{
+"name" : "Thomas Mann","description" : "","size" : 3938,"children" : []}			 ] 			 }			]			}		]		}	]	},	{	"name" : "évènement",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "évènement collectif",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "conflit militaire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Bataille de Sadowa","description" : "","size" : 3938,"children" : []},{
+"name" : "Guerre froide","description" : "","size" : 3938,"children" : []},{
+"name" : "Guerre de Trente Ans","description" : "","size" : 3938,"children" : []},{
+"name" : "Guerre franco-allemande de 1870","description" : "","size" : 3938,"children" : []},{
+"name" : "Première Guerre mondiale","description" : "","size" : 3938,"children" : []},{
+"name" : "Seconde Guerre mondiale","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "œuvre",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "œuvre écrite",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "publication périodique",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "journal",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "U.S. News & World Report","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "structure architecturale",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "bâtiment",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "château",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Château de Versailles","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "édifice religieux",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Église Sainte-Marie (Lübeck)","description" : "","size" : 3938,"children" : []},{
+"name" : "Cathédrale de Cologne","description" : "","size" : 3938,"children" : []},{
+"name" : "Cathédrale d'Aix-la-Chapelle","description" : "","size" : 3938,"children" : []},{
+"name" : "Cathédrale Notre-Dame-de-l'Assomption-et-Saint-Étienne","description" : "","size" : 3938,"children" : []},{
+"name" : "Cathédrale Saint-Martin de Mayence","description" : "","size" : 3938,"children" : []},{
+"name" : "Cathédrale de Lübeck","description" : "","size" : 3938,"children" : []},					{					"name" : "église",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Église de Wies","description" : "","size" : 3938,"children" : []},{
+"name" : "Église Notre-Dame de Dresde","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			},			{			"name" : "infrastructure",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "aéroport",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Aéroport de Dortmund","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Dresde","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Nuremberg","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport international de Hanovre Langenhagen","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport international de Düsseldorf","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Munich-Franz-Josef Strauss","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Francfort-Rhein/Main","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Berlin-Brandenburg","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Berlin-Tegel","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Brême","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Stuttgart","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Francfort-Hahn","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Hambourg","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport Cologne/Bonn","description" : "","size" : 3938,"children" : []},{
+"name" : "Aéroport de Weeze","description" : "","size" : 3938,"children" : []}				 ] 				 }				]				}			]			},			{			"name" : "Venue",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Vieil opéra de Francfort","description" : "","size" : 3938,"children" : []},{
+"name" : "Philharmonie de l'Elbe","description" : "","size" : 3938,"children" : []},				{				"name" : "théâtre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Staatsoper Unter den Linden","description" : "","size" : 3938,"children" : []},{
+"name" : "Hessisches Staatstheater","description" : "","size" : 3938,"children" : []},{
+"name" : "Palais des festivals de Baden-Baden","description" : "","size" : 3938,"children" : []},{
+"name" : "Palais des festivals de Bayreuth","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		},		{		"name" : "monument",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Mur de Berlin","description" : "","size" : 3938,"children" : []}		]		},		{		"name" : "lieu naturel",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "étendue d'eau",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "lac",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Lac de Schwerin","description" : "","size" : 3938,"children" : []},{
+"name" : "Lac de Steinhude","description" : "","size" : 3938,"children" : []},{
+"name" : "Chiemsee","description" : "","size" : 3938,"children" : []},{
+"name" : "Lac de Constance","description" : "","size" : 3938,"children" : []},{
+"name" : "Lac de Kummerow","description" : "","size" : 3938,"children" : []},{
+"name" : "Lac Ammer","description" : "","size" : 3938,"children" : []},{
+"name" : "Plauer See","description" : "","size" : 3938,"children" : []},{
+"name" : "Lac Müritz","description" : "","size" : 3938,"children" : []},{
+"name" : "Lac de Starnberg","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "ruisseau",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "rivière",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "B","description" : "","size" : 3938,"children" : [{
+"name" : "Breg","description" : "","size" : 3938,"children" : []},{
+"name" : "Brigach","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "D","description" : "","size" : 3938,"children" : [{
+"name" : "Danube","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "E","description" : "","size" : 3938,"children" : [{
+"name" : "Elbe (fleuve)","description" : "","size" : 3938,"children" : []},{
+"name" : "Ems","description" : "","size" : 3938,"children" : []},{
+"name" : "Eider (fleuve)","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "M","description" : "","size" : 3938,"children" : [{
+"name" : "Meuse (fleuve)","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "N","description" : "","size" : 3938,"children" : [{
+"name" : "Neisse (rivière)","description" : "","size" : 3938,"children" : []},{
+"name" : "Niémen","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "O","description" : "","size" : 3938,"children" : [{
+"name" : "Oder","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "R","description" : "","size" : 3938,"children" : [{
+"name" : "Rhin","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "V","description" : "","size" : 3938,"children" : [{
+"name" : "Vltava","description" : "","size" : 3938,"children" : []}					 ] 					 },{
+"name" : "W","description" : "","size" : 3938,"children" : [{
+"name" : "Weser","description" : "","size" : 3938,"children" : []}					 ] 					 }					]					}				]				}			]			},			{			"name" : "montagne",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Alpes","description" : "","size" : 3938,"children" : []},{
+"name" : "Alpes de Berchtesgaden","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "B","description" : "","size" : 3938,"children" : [{
+"name" : "Brocken","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "E","description" : "","size" : 3938,"children" : [{
+"name" : "Eifel","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Feldberg (Forêt-Noire)","description" : "","size" : 3938,"children" : []},{
+"name" : "Forêt de Thuringe","description" : "","size" : 3938,"children" : []},{
+"name" : "Forêt-Noire","description" : "","size" : 3938,"children" : []},{
+"name" : "Fichtelgebirge","description" : "","size" : 3938,"children" : []},{
+"name" : "Forêt de Bohême","description" : "","size" : 3938,"children" : []},{
+"name" : "Forêt du Haut-Palatinat","description" : "","size" : 3938,"children" : []},{
+"name" : "Fichtelberg (montagne)","description" : "","size" : 3938,"children" : []},{
+"name" : "Forêt de Bavière","description" : "","size" : 3938,"children" : []},{
+"name" : "Forêt de Teutberg","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "G","description" : "","size" : 3938,"children" : [{
+"name" : "Großer Arber","description" : "","size" : 3938,"children" : []},{
+"name" : "Großer Feldberg","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "H","description" : "","size" : 3938,"children" : [{
+"name" : "Harz","description" : "","size" : 3938,"children" : []},{
+"name" : "Hunsrück","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "J","description" : "","size" : 3938,"children" : [{
+"name" : "Jura franconien","description" : "","size" : 3938,"children" : []},{
+"name" : "Jura souabe","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "L","description" : "","size" : 3938,"children" : [{
+"name" : "Lemberg (Jura souabe)","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "M","description" : "","size" : 3938,"children" : [{
+"name" : "Monts de Lusace","description" : "","size" : 3938,"children" : []},{
+"name" : "Monts Métallifères (Europe centrale)","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "O","description" : "","size" : 3938,"children" : [{
+"name" : "Odenwald","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "P","description" : "","size" : 3938,"children" : [{
+"name" : "Pfälzerwald","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "R","description" : "","size" : 3938,"children" : [{
+"name" : "Rhön","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "T","description" : "","size" : 3938,"children" : [{
+"name" : "Taunus","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "W","description" : "","size" : 3938,"children" : [{
+"name" : "Westerwald","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "Z","description" : "","size" : 3938,"children" : [{
+"name" : "Zugspitze","description" : "","size" : 3938,"children" : []}			 ] 			 }			]			},			{			"name" : "volcan",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Wasserkuppe","description" : "","size" : 3938,"children" : []}			]			}		]		},		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "continent",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Europe","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "pays",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Afghanistan","description" : "","size" : 3938,"children" : []},{
+"name" : "Antigua-et-Barbuda","description" : "","size" : 3938,"children" : []},{
+"name" : "Autriche","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "B","description" : "","size" : 3938,"children" : [{
+"name" : "Belgique","description" : "","size" : 3938,"children" : []},{
+"name" : "Bosnie-Herzégovine","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "C","description" : "","size" : 3938,"children" : [{
+"name" : "Canada","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "D","description" : "","size" : 3938,"children" : [{
+"name" : "Danemark","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "France","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "I","description" : "","size" : 3938,"children" : [{
+"name" : "Italie","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "J","description" : "","size" : 3938,"children" : [{
+"name" : "Japon","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "K","description" : "","size" : 3938,"children" : [{
+"name" : "Kosovo","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "L","description" : "","size" : 3938,"children" : [{
+"name" : "Liberia","description" : "","size" : 3938,"children" : []},{
+"name" : "Lituanie","description" : "","size" : 3938,"children" : []},{
+"name" : "Luxembourg (pays)","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "M","description" : "","size" : 3938,"children" : [{
+"name" : "Malte","description" : "","size" : 3938,"children" : []},{
+"name" : "Monaco","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "P","description" : "","size" : 3938,"children" : [{
+"name" : "Pays-Bas","description" : "","size" : 3938,"children" : []},{
+"name" : "Pologne","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "R","description" : "","size" : 3938,"children" : [{
+"name" : "Roumanie","description" : "","size" : 3938,"children" : []},{
+"name" : "Royaume-Uni","description" : "","size" : 3938,"children" : []},{
+"name" : "Russie","description" : "","size" : 3938,"children" : []},{
+"name" : "République tchèque","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "S","description" : "","size" : 3938,"children" : [{
+"name" : "Saint-Marin","description" : "","size" : 3938,"children" : []},{
+"name" : "Suisse","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "V","description" : "","size" : 3938,"children" : [{
+"name" : "Vatican","description" : "","size" : 3938,"children" : []}			 ] 			 }			]			},			{			"name" : "île",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Rügen","description" : "","size" : 3938,"children" : []},{
+"name" : "Usedom","description" : "","size" : 3938,"children" : []},{
+"name" : "Amrum","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "région",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "région administrative",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Bourgogne","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "zone peuplée",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Aix-la-Chapelle","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "B","description" : "","size" : 3938,"children" : [{
+"name" : "Baden-Baden","description" : "","size" : 3938,"children" : []},{
+"name" : "Bayreuth","description" : "","size" : 3938,"children" : []},{
+"name" : "Bremerhaven","description" : "","size" : 3938,"children" : []},{
+"name" : "Brême","description" : "","size" : 3938,"children" : []},{
+"name" : "Bonn","description" : "","size" : 3938,"children" : []},{
+"name" : "Büsingen am Hochrhein","description" : "","size" : 3938,"children" : []},{
+"name" : "Borkum","description" : "","size" : 3938,"children" : []},{
+"name" : "Bautzen","description" : "","size" : 3938,"children" : []},{
+"name" : "Belfort","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "C","description" : "","size" : 3938,"children" : [{
+"name" : "Chemnitz","description" : "","size" : 3938,"children" : []},{
+"name" : "Cologne","description" : "","size" : 3938,"children" : []},{
+"name" : "Cottbus","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "D","description" : "","size" : 3938,"children" : [{
+"name" : "Dortmund","description" : "","size" : 3938,"children" : []},{
+"name" : "Dresde","description" : "","size" : 3938,"children" : []},{
+"name" : "Düsseldorf","description" : "","size" : 3938,"children" : []},{
+"name" : "Duisbourg","description" : "","size" : 3938,"children" : []},{
+"name" : "Donaueschingen","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "E","description" : "","size" : 3938,"children" : [{
+"name" : "Essen","description" : "","size" : 3938,"children" : []},{
+"name" : "Eupen","description" : "","size" : 3938,"children" : []},{
+"name" : "Erfurt","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Francfort-sur-l'Oder","description" : "","size" : 3938,"children" : []},{
+"name" : "Francfort-sur-le-Main","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "H","description" : "","size" : 3938,"children" : [{
+"name" : "Hanovre","description" : "","size" : 3938,"children" : []},{
+"name" : "Hildesheim","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "K","description" : "","size" : 3938,"children" : [{
+"name" : "Karlsruhe","description" : "","size" : 3938,"children" : []},{
+"name" : "Kiel","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "L","description" : "","size" : 3938,"children" : [{
+"name" : "Leipzig","description" : "","size" : 3938,"children" : []},{
+"name" : "Lübeck","description" : "","size" : 3938,"children" : []},{
+"name" : "Landshut","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "M","description" : "","size" : 3938,"children" : [{
+"name" : "Malmedy","description" : "","size" : 3938,"children" : []},{
+"name" : "Magdebourg","description" : "","size" : 3938,"children" : []},{
+"name" : "Mayence","description" : "","size" : 3938,"children" : []},{
+"name" : "Metz","description" : "","size" : 3938,"children" : []},{
+"name" : "Munich","description" : "","size" : 3938,"children" : []},{
+"name" : "Mönchengladbach","description" : "","size" : 3938,"children" : []},{
+"name" : "Münster","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "N","description" : "","size" : 3938,"children" : [{
+"name" : "Norderney","description" : "","size" : 3938,"children" : []},{
+"name" : "Nuremberg","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "P","description" : "","size" : 3938,"children" : [{
+"name" : "Potsdam","description" : "","size" : 3938,"children" : []},{
+"name" : "Pellworm","description" : "","size" : 3938,"children" : []},{
+"name" : "Poel","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "R","description" : "","size" : 3938,"children" : [{
+"name" : "Rome","description" : "","size" : 3938,"children" : []},{
+"name" : "Rostock","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "S","description" : "","size" : 3938,"children" : [{
+"name" : "Steingaden","description" : "","size" : 3938,"children" : []},{
+"name" : "Sarrebruck","description" : "","size" : 3938,"children" : []},{
+"name" : "Schwerin","description" : "","size" : 3938,"children" : []},{
+"name" : "Spire (ville)","description" : "","size" : 3938,"children" : []},{
+"name" : "Stuttgart","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "U","description" : "","size" : 3938,"children" : [{
+"name" : "Ulm","description" : "","size" : 3938,"children" : []}			 ] 			 },{
+"name" : "W","description" : "","size" : 3938,"children" : [{
+"name" : "Wittemberg","description" : "","size" : 3938,"children" : []},{
+"name" : "Wiesbaden","description" : "","size" : 3938,"children" : []},{
+"name" : "Wismar","description" : "","size" : 3938,"children" : []}			 ] 			 },				{				"name" : "ville",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Gdańsk","description" : "","size" : 3938,"children" : []},{
+"name" : "Lorraine","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "territoire",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Angleterre","description" : "","size" : 3938,"children" : []},				{				"name" : "OldTerritory",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Allemagne de l'Ouest","description" : "","size" : 3938,"children" : []},{
+"name" : "Autriche-Hongrie","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "B","description" : "","size" : 3938,"children" : [{
+"name" : "Berlin-Est","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "C","description" : "","size" : 3938,"children" : [{
+"name" : "Confédération de l'Allemagne du Nord","description" : "","size" : 3938,"children" : []},{
+"name" : "Confédération germanique","description" : "","size" : 3938,"children" : []},{
+"name" : "Confédération du Rhin","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "E","description" : "","size" : 3938,"children" : [{
+"name" : "Empire allemand","description" : "","size" : 3938,"children" : []},{
+"name" : "Empire carolingien","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Francie orientale","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "L","description" : "","size" : 3938,"children" : [{
+"name" : "Lorraine (région)","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "O","description" : "","size" : 3938,"children" : [{
+"name" : "Occupation de l'Allemagne après la Seconde Guerre mondiale","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "P","description" : "","size" : 3938,"children" : [{
+"name" : "Prusse-Orientale","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "R","description" : "","size" : 3938,"children" : [{
+"name" : "Royaumes francs","description" : "","size" : 3938,"children" : []},{
+"name" : "République de Weimar","description" : "","size" : 3938,"children" : []},{
+"name" : "République démocratique allemande","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "S","description" : "","size" : 3938,"children" : [{
+"name" : "Saint-Empire romain germanique","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "T","description" : "","size" : 3938,"children" : [{
+"name" : "Tchécoslovaquie","description" : "","size" : 3938,"children" : []},{
+"name" : "Troisième Reich","description" : "","size" : 3938,"children" : []}				 ] 				 },{
+"name" : "U","description" : "","size" : 3938,"children" : [{
+"name" : "Union des républiques socialistes soviétiques","description" : "","size" : 3938,"children" : []}				 ] 				 }				]				}			]			}		]		},		{		"name" : "site du patrimoine mondial",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Cathédrale Sainte-Marie de Hildesheim","description" : "","size" : 3938,"children" : []},{
+"name" : "Église Saint-Michel de Hildesheim","description" : "","size" : 3938,"children" : []}		]		}	]	},	{	"name" : "langage",	"description" : "",	"size" : 3938,	"children" : [{
+"name" : "A","description" : "","size" : 3938,"children" : [{
+"name" : "Ancien français","description" : "","size" : 3938,"children" : []},{
+"name" : "Allemand","description" : "","size" : 3938,"children" : []},{
+"name" : "Anglais","description" : "","size" : 3938,"children" : []},{
+"name" : "Alémanique","description" : "","size" : 3938,"children" : []},{
+"name" : "Anglo-frison","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "B","description" : "","size" : 3938,"children" : [{
+"name" : "Bas allemand","description" : "","size" : 3938,"children" : []},{
+"name" : "Bas-sorabe","description" : "","size" : 3938,"children" : []},{
+"name" : "Bavarois","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "C","description" : "","size" : 3938,"children" : [{
+"name" : "Catalan","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "D","description" : "","size" : 3938,"children" : [{
+"name" : "Danois","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "E","description" : "","size" : 3938,"children" : [{
+"name" : "Espagnol","description" : "","size" : 3938,"children" : []},{
+"name" : "Estonien","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "F","description" : "","size" : 3938,"children" : [{
+"name" : "Frison (langue)","description" : "","size" : 3938,"children" : []},{
+"name" : "Finnois","description" : "","size" : 3938,"children" : []},{
+"name" : "Français","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "G","description" : "","size" : 3938,"children" : [{
+"name" : "Gotique","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "H","description" : "","size" : 3938,"children" : [{
+"name" : "Haut-sorabe","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "L","description" : "","size" : 3938,"children" : [{
+"name" : "Langues germaniques","description" : "","size" : 3938,"children" : []},{
+"name" : "Langues slaves","description" : "","size" : 3938,"children" : []},{
+"name" : "Langues germaniques occidentales","description" : "","size" : 3938,"children" : []},{
+"name" : "Latin","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "N","description" : "","size" : 3938,"children" : [{
+"name" : "Néerlandais","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "P","description" : "","size" : 3938,"children" : [{
+"name" : "Polonais","description" : "","size" : 3938,"children" : []},{
+"name" : "Portugais","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "R","description" : "","size" : 3938,"children" : [{
+"name" : "Romani","description" : "","size" : 3938,"children" : []},{
+"name" : "Russe","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "S","description" : "","size" : 3938,"children" : [{
+"name" : "Scots","description" : "","size" : 3938,"children" : []},{
+"name" : "Sorabe","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "T","description" : "","size" : 3938,"children" : [{
+"name" : "Tchèque","description" : "","size" : 3938,"children" : []}	 ] 	 },{
+"name" : "V","description" : "","size" : 3938,"children" : [{
+"name" : "Vieux haut-allemand","description" : "","size" : 3938,"children" : []}	 ] 	 }	]	}]}

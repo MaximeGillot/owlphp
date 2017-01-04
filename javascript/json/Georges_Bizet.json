@@ -1,0 +1,71 @@
+{"name" : "Georges_Bizet","description" : "","size" : 3938,"children" : [{
+"name" : "L'Arlésienne (Bizet)","description" : "","size" : 3938,"children" : []},{
+"name" : "Jules Barbier","description" : "","size" : 3938,"children" : []},{
+"name" : "Jérôme Bastianelli","description" : "","size" : 3938,"children" : []},{
+"name" : "Rémy Stricker","description" : "","size" : 3938,"children" : []},{
+"name" : "Symphonie en ut majeur de Bizet","description" : "","size" : 3938,"children" : []},{
+"name" : "Symphonie « Roma »","description" : "","size" : 3938,"children" : []},{
+"name" : "Jacques Mercier (chef d'orchestre)","description" : "","size" : 3938,"children" : []},{
+"name" : "Julia Migenes","description" : "","size" : 3938,"children" : []},{
+"name" : "Oscar Hammerstein II","description" : "","size" : 3938,"children" : []},{
+"name" : "La Juive","description" : "","size" : 3938,"children" : []},{
+"name" : "Hervé Lacombe","description" : "","size" : 3938,"children" : []},	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "organisation",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Académie de France à Rome","description" : "","size" : 3938,"children" : []},			{			"name" : "établissement d'enseignement",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "école",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Conservatoire national supérieur de musique et de danse","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		},		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "architecte",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Charles Garnier (architecte)","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "artiste",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Étienne Carjat","description" : "","size" : 3938,"children" : []},				{				"name" : "musicien",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "ClassicalMusicArtist",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Emmanuel Bondeville","description" : "","size" : 3938,"children" : []},{
+"name" : "Ernest Ansermet","description" : "","size" : 3938,"children" : []},{
+"name" : "Gioachino Rossini","description" : "","size" : 3938,"children" : []},{
+"name" : "Jacques Offenbach","description" : "","size" : 3938,"children" : []},{
+"name" : "Charles Gounod","description" : "","size" : 3938,"children" : []},{
+"name" : "Célestine Galli-Marié","description" : "","size" : 3938,"children" : []},{
+"name" : "Édouard Colonne","description" : "","size" : 3938,"children" : []},{
+"name" : "Ruggero Raimondi","description" : "","size" : 3938,"children" : []},{
+"name" : "Igor Markevitch","description" : "","size" : 3938,"children" : []},{
+"name" : "Thomas Beecham","description" : "","size" : 3938,"children" : []},{
+"name" : "Michel Carré (librettiste)","description" : "","size" : 3938,"children" : []},{
+"name" : "Claudio Abbado","description" : "","size" : 3938,"children" : []},{
+"name" : "Johannes Brahms","description" : "","size" : 3938,"children" : []},{
+"name" : "Richard Wagner","description" : "","size" : 3938,"children" : []},{
+"name" : "Ernest Guiraud","description" : "","size" : 3938,"children" : []},{
+"name" : "Raoul Laparra","description" : "","size" : 3938,"children" : []},{
+"name" : "Teresa Berganza","description" : "","size" : 3938,"children" : []},{
+"name" : "Antonin Marmontel","description" : "","size" : 3938,"children" : []},{
+"name" : "Lorin Maazel","description" : "","size" : 3938,"children" : []},{
+"name" : "François Benoist","description" : "","size" : 3938,"children" : []}					]					}				]				},				{				"name" : "peintre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Magdeleine Real del Sarte","description" : "","size" : 3938,"children" : []}				]				},				{				"name" : "acteur",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Otto Preminger","description" : "","size" : 3938,"children" : []},{
+"name" : "Carlos Saura","description" : "","size" : 3938,"children" : []},{
+"name" : "Francesco Rosi","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "philosophe",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Friedrich Nietzsche","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "écrivain",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Ludovic Halévy","description" : "","size" : 3938,"children" : []},{
+"name" : "Walter Scott","description" : "","size" : 3938,"children" : []},{
+"name" : "Alphonse Daudet","description" : "","size" : 3938,"children" : []},{
+"name" : "Prosper Mérimée","description" : "","size" : 3938,"children" : []},{
+"name" : "Jean Lacouture","description" : "","size" : 3938,"children" : []},{
+"name" : "Henri Meilhac","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "récompense",	"description" : "",	"size" : 3938,	"children" : [{
+"name" : "Prix de Rome","description" : "","size" : 3938,"children" : []}	]	},	{	"name" : "fonction de personne",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "PoliticalFunction",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "20e arrondissement de Paris","description" : "","size" : 3938,"children" : []}		]		}	]	},	{	"name" : "œuvre",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "film",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Carmen (film, 1983)","description" : "","size" : 3938,"children" : []},{
+"name" : "Carmen (film, 1984)","description" : "","size" : 3938,"children" : []}		]		},		{		"name" : "œuvre musicale",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "opéra",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "La Périchole","description" : "","size" : 3938,"children" : []},{
+"name" : "La Vie parisienne","description" : "","size" : 3938,"children" : []},{
+"name" : "Les Pêcheurs de perles","description" : "","size" : 3938,"children" : []},{
+"name" : "La Jolie Fille de Perth (opéra)","description" : "","size" : 3938,"children" : []},{
+"name" : "Carmen (opéra)","description" : "","size" : 3938,"children" : []},{
+"name" : "Le Docteur Miracle (Bizet)","description" : "","size" : 3938,"children" : []},{
+"name" : "La Belle Hélène","description" : "","size" : 3938,"children" : []}			]			}		]		},		{		"name" : "œuvre écrite",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Carmen (nouvelle)","description" : "","size" : 3938,"children" : []},			{			"name" : "livre",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "La Jolie Fille de Perth","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "structure architecturale",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "infrastructure",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "RouteOfTransportation",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "route",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Rue de Douai","description" : "","size" : 3938,"children" : []},{
+"name" : "Rue de La Tour-d'Auvergne","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			},			{			"name" : "Venue",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "théâtre",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Théâtre national de l'Opéra-Comique","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		},		{		"name" : "cimetière",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Cimetière du Père-Lachaise","description" : "","size" : 3938,"children" : []}		]		},		{		"name" : "monument",		"description" : "",		"size" : 3938,		"children" : [{
+"name" : "Villa Médicis","description" : "","size" : 3938,"children" : []}		]		},		{		"name" : "lieu naturel",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "étendue d'eau",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "ruisseau",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "rivière",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Seine","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			}		]		},		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "région",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "région administrative",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Vienne (Autriche)","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "zone peuplée",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Sampans","description" : "","size" : 3938,"children" : []},{
+"name" : "Paris","description" : "","size" : 3938,"children" : []},{
+"name" : "Bougival","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "territoire",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "OldTerritory",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Seine-et-Oise","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		}	]	}]}

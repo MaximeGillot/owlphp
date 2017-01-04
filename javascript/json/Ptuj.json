@@ -1,0 +1,10 @@
+{"name" : "Ptuj","description" : "","size" : 3938,"children" : [	{	"name" : "agent",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "personne",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "RomanEmperor",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Trajan","description" : "","size" : 3938,"children" : []},{
+"name" : "Vespasien","description" : "","size" : 3938,"children" : []}			]			}		]		}	]	},	{	"name" : "lieu",	"description" : "",	"size" : 3938,	"children" : [		{		"name" : "lieu naturel",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "étendue d'eau",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "ruisseau",				"description" : "",				"size" : 3938,				"children" : [					{					"name" : "rivière",					"description" : "",					"size" : 3938,					"children" : [{
+"name" : "Drave (cours d'eau)","description" : "","size" : 3938,"children" : []}					]					}				]				}			]			}		]		},		{		"name" : "lieu habité",		"description" : "",		"size" : 3938,		"children" : [			{			"name" : "pays",			"description" : "",			"size" : 3938,			"children" : [{
+"name" : "Slovénie","description" : "","size" : 3938,"children" : []}			]			},			{			"name" : "zone peuplée",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "ville",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Maribor","description" : "","size" : 3938,"children" : []}				]				}			]			},			{			"name" : "territoire",			"description" : "",			"size" : 3938,			"children" : [				{				"name" : "OldTerritory",				"description" : "",				"size" : 3938,				"children" : [{
+"name" : "Empire romain","description" : "","size" : 3938,"children" : []}				]				}			]			}		]		}	]	},	{	"name" : "langage",	"description" : "",	"size" : 3938,	"children" : [{
+"name" : "Allemand","description" : "","size" : 3938,"children" : []},{
+"name" : "Latin","description" : "","size" : 3938,"children" : []},{
+"name" : "Slovène","description" : "","size" : 3938,"children" : []}	]	}]}
